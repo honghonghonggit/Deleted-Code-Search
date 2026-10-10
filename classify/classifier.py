@@ -1,35 +1,35 @@
-"""우리 방식 - 규칙 + scikit-learn + LLM 을 합쳐 이유와 근거 등급을 낸다 (#84). 담당: 희수
+"""우리 방식 - 맥락 결합 + 규칙 + scikit-learn + LLM 으로 이유와 근거 등급 (#84, #86). 담당: 희수
 
 무엇을:
     §4.4 레코드 하나를 받아 `reason`(이유 8종 + 근거 등급 + 근거 문장 + 신뢰도)을 낸다.
     CHARTER §4.2 ③ "우리 방식" 이고, 게이트 2(§10.2)에서 기준선 A/B 를 이겨야 하는 쪽이다.
 
-근거가 먼저다:
-    1. `classify.rules` 로 맥락에서 **이유를 말하는 문장**을 찾는다. 대체 코드(`replacement.code`)
-       가 있는지도 본다
-    2. 둘 다 없으면 **UNK / UNKNOWN** 이다. 모델·LLM 이 무엇을 고르든 뒤집지 않는다
-    3. 있으면 이유 7종을 규칙·모델·LLM 점수로 고른다. 동점이면 이유 문장이 받치는 라벨이 이긴다
-    4. 고른 라벨의 가장 강한 근거로 등급을 정한다 (`Classifier._grade`)
+어떻게 고르나 (#86):
+    1. 이유 8종(UNK 포함)마다 점수 = 모델 확률(`classify.model`) + LLM 이 고른 라벨에 `WEIGHT_LLM`
+    2. 가장 높은 라벨. 동점이면 이유 문장이 받치는 라벨, 그다음 가이드 §11-1 우선순위
+    3. UNK 면 UNKNOWN. 아니면 고른 라벨을 가장 직접 받치는 근거로 등급을 정한다 (`_grade`)
 
-    "근거가 있나" 와 "어느 이유인가" 를 가른다. 앞은 UNK 를 정하는 문이고, 뒤는 점수다. 문장의
-    키워드 라벨로 후보를 자르면 키워드 잡음이 정답을 후보에서 빼 버린다 (`Classifier._scores`).
-    가이드 §6.2.1 의 "근거 6종 중 무엇인지 말할 수 없으면 UNKNOWN" 은 1·2 가 지킨다.
+    규칙(`classify.rules`)은 라벨을 고르지 않고 근거 등급과 인용에만 쓴다. #84 에서는 규칙 문장의
+    키워드 라벨이 표를 던졌는데, 학습 300건 5겹 교차 검증에서 그 표가 BUG 를 98건(정답 6건) 내며
+    정확도를 0.46 → 0.33 으로 끌어내렸다 - 긴 PR 본문에는 `fix` 같은 낱말이 거의 늘 있다. 같은
+    이유로 "키워드 문장도 대체 코드도 없으면 UNK" 관문도 뺐다 (`classify.model` 독스트링).
 
 LLM 은 후보와 근거 문장만 (ADR-005):
-    LLM 답은 라벨 점수에 한 표를 더할 뿐이다. 근거가 하나도 없는 레코드에서는 LLM 이 무엇을
-    골라도 UNK 이고, 동점에서는 이유 문장이 받치는 라벨이 LLM 표를 이긴다. 근거 문장을 써 줄
-    수는 있다 - ADR-005 가 허락한 "근거 작성" 이다. EXPLICIT 의 근거 문장은 LLM 이 쓰지 않는다.
-    원문 인용이어야 한다 (가이드 §6.1).
+    LLM 답은 라벨 점수에 `WEIGHT_LLM` 을 더할 뿐이고, 학습 데이터로 배운 모델 확률과 겨룬다.
+    근거 문장을 써 줄 수는 있다 - ADR-005 가 허락한 "근거 작성" 이다. EXPLICIT 의 근거 문장은
+    LLM 이 쓰지 않는다. 원문 인용이어야 한다 (가이드 §6.1).
 
-자리표시자인 것:
-    구성요소 가중치(`WEIGHT_*`)와 "이유 문장이 이 함수를 가리키지 않을 때" 의 신뢰도는 개발용
-    합의 102건(가이드 v1 라벨)에 맞춘 출발점이다. 500건 val 100 으로 다시 정한다 (#86).
-    근거 ②~⑥(가이드 §6.2.1)은 아직 없다 - ②③은 레코드에 필드가 없고, ④⑤⑥은 규칙을 새로
-    설계해야 한다.
+고른 방법:
+    `WEIGHT_LLM`, 모델 특징·규제(`classify.model`), LLM 프롬프트(c3)는 학습 300건 5겹 교차 검증으로
+    고르고 검증 100건으로 한 번 확인했다. 시도한 것 전부와 버린 것은
+    `docs/reports/classifier_val.md`.
+    근거 ②~⑥(가이드 §6.2.1)의 규칙은 아직 없다 - 그 판단은 LLM 이 화면(추가 헝크·삭제 본문)을
+    보고 한다. "이유 문장이 이 함수를 가리키지 않을 때" 의 신뢰도는 #84 값 그대로다.
 
 실행:
     python -m classify.classifier --records records.jsonl --labels merged.jsonl --out out.jsonl
     python -m classify.classifier ... --llm        # LLM 후보도 쓴다 (NVIDIA_API_KEY, #59)
+    python -m classify.classifier ... --llm --split val   # 학습 split 으로 학습, 검증 split 예측
 """
 
 from __future__ import annotations
@@ -61,18 +61,17 @@ from classify.rules import RULES_VERSION, ReasonSentence, find_reason_sentences,
 from pipeline.select_repos import load_env_file
 
 METHOD_OURS = "ours"
-CANDIDATE_PROMPT_VERSION = "c2"
+CANDIDATE_PROMPT_VERSION = "c3"
 CLASSIFIER_VERSION = f"{RULES_VERSION}+{MODEL_VERSION}+{CANDIDATE_PROMPT_VERSION}"
 
 EXPLICIT, INFERRED, UNKNOWN = EVIDENCE_GRADES
-REASONS: tuple[str, ...] = tuple(label for label in REASON_LABELS if label != UNKNOWN_LABEL)
 # 점수가 같을 때의 순서. 기준선 A 규칙 순서 = 가이드 §11-1 우선순위 (SEC > LIB > ... > DESIGN).
 PRIORITY: tuple[str, ...] = tuple(label for label, _patterns in KEYWORD_RULES)
 
-# 구성요소 가중치 - 자리표시자 (모듈 독스트링). 셋 다 [0, 1] 점수라 같은 무게로 시작한다.
-WEIGHT_RULE = 1.0
-WEIGHT_MODEL = 1.0
-WEIGHT_LLM = 1.0
+# LLM 이 고른 라벨에 더하는 점수. 모델 확률(합 1)과 겨룬다. 학습 300건 5겹 교차 검증에서
+# 0.4~0.7 이 0.65~0.67 로 평평했고 그 가운데를 골랐다 (0 이면 모델만 0.60, 1 이상이면 LLM 답
+# 그대로 0.62). `docs/reports/classifier_val.md`.
+WEIGHT_LLM = 0.5
 
 # EXPLICIT 은 1.0 고정 (가이드 §6.1, §11-3).
 EXPLICIT_CONFIDENCE = 1.0
@@ -90,6 +89,9 @@ MAX_REPLACEMENT_CHARS = 2000
 MAX_HUNKS_CHARS = 3000
 # 기준선 B 캐시 옆. 커밋하는 이유는 `classify.baseline_llm.DEFAULT_CACHE_DIR`.
 DEFAULT_CACHE_DIR = Path("datasets") / "llm_cache" / "classifier"
+# `--split` 으로 예측할 split -> 모델을 학습할 split. 검증은 학습 300건으로, 최종 test 는 모델·
+# 가중치를 고정한 뒤 학습+검증 400건으로 다시 학습해 한 번 돈다 (`docs/evaluation.md` #86 절).
+TRAIN_SPLITS = {"val": ("train",), "test": ("train", "val")}
 
 # c2 프롬프트에 넣는 라벨 가이드 v3 요약 (§3 판정 순서, §4, §5, §6.2.1, §6.3.3, §6.4). 사람 라벨이
 # 이 기준으로 정해졌으니 LLM 도 같은 기준으로 답해야 한다. 이유 정의와 헷갈리는 쌍은 라벨러용
@@ -107,16 +109,30 @@ CANDIDATE_GUIDE = """이유 8종:
 - UNK: 아래 화면으로는 근거를 댈 수 없다
 
 판단 순서:
-1. 배울 게 없는 삭제면 UNK - 같은 본문이 추가된 코드에 다른 이름·위치로 있다\
-(순수 이동·이름 바꾸기), 줄이 포맷만 바뀌었다, 경로가 vendor/·third_party/ 거나 생성 코드다
-2. 맥락 문장이 삭제의 "왜"를 말하면 그 이유를 따른다. 지웠다·바꿨다는 사실이나 fix·cleanup·\
-refactor 같은 낱말만 있으면 이유가 아니다
-3. 그런 문장이 없거나 이 함수에 닿지 않으면 화면의 코드로 추론한다 - 대체 코드나 추가된 코드가 \
-삭제된 일을 이어받나, 이 함수를 부르던 자리가 바뀌었나, 삭제된 본문 자체가 이유를 드러내나 \
-(deprecated 경고, 빈 스텁, 제거 예정 주석, @skip)
-4. 커밋이 큰 작업을 하고 이 함수가 그 영역에 있다는 것만으로는 근거가 아니다. 테스트 함수가 \
-함께 지워졌다는 사실도 근거가 아니다. 근거가 없으면 UNK
+1. 배울 게 없는 삭제면 UNK
+   - 같은 본문이 추가된 코드에 다른 이름·위치로 있다 (순수 이동·이름 바꾸기)
+   - 추가된 코드에 같은 줄이 포맷·문법만 바뀌어 있다
+   - 경로에 vendor/·vendored/·third_party/ 가 있거나 생성 코드다
+   - 커밋 메시지·PR 이 코드를 다른 저장소로 옮긴다(move·migrate·extract·split out)고 그 저장소를 \
+밝히고, 이 파일이 옮기는 대상 안에 있다
+2. 맥락 문장이 이 함수·파일·모듈을 이름으로 가리키며 삭제의 "왜"를 말하면 그 이유를 따른다. \
+지웠다·옮겼다·바꿨다·다시 썼다·되돌렸다(revert)는 사실이나 fix·cleanup·refactor 같은 낱말만 \
+있으면 이유가 아니다
+3. 그런 문장이 없으면 화면의 코드로만 추론한다 - 대체 코드나 추가된 코드에서 삭제된 일을 이어받는 \
+줄을 가리킬 수 있나, 추가된 코드에서 이 함수를 부르던 자리가 바뀌었나, 삭제된 본문 자체가 이유를 \
+드러내나 (deprecated 경고, 빈 스텁, 제거 예정 주석, @skip)
+4. 커밋이 큰 작업(전환·재작성·재구성·이동·되돌림)을 하고 이 함수가 그 영역에 있다는 것만으로는 \
+근거가 아니다. 네 근거 문장에서 함수 이름만 바꿔도 같은 커밋의 다른 삭제에 그대로 맞으면 근거가 \
+아니다. 근거가 없으면 UNK
 5. 이유가 둘이면 수단이 아니라 이유, 결과가 아니라 원인을 고른다 ("refactor to fix race" 는 BUG)
+
+테스트 함수 (테스트 코드: 예):
+- 이 테스트가 지워졌다는 사실 자체는 근거가 아니다. 테스트 대상의 사정(폐기·재편)으로 FEAT·DESIGN \
+을 고르지 않는다
+- 이유 문장이 이 테스트를 이름으로 가리키면 그 이유를 따른다
+- 테스트가 부르거나 import 하는 대상을 이 커밋에서 지웠다(remove·delete·drop)고 문장이 그 이름으로 \
+말하면 DEAD
+- 그 밖에는 삭제된 본문 자체(@skip·@xfail, 단정문 없음)가 이유를 드러낼 때만 그 이유, 아니면 UNK
 
 헷갈리는 쌍:
 - LIB vs DESIGN: 외부·표준 라이브러리가 일을 이어받으면 LIB, \
@@ -125,9 +141,7 @@ refactor 같은 낱말만 있으면 이유가 아니다
 - DEAD vs FEAT: 공개 표면(공개 API·CLI·설정·문서)에서 사라지면 FEAT, \
 내부 함수가 호출자를 잃었으면 DEAD
 - DESIGN vs FEAT: 같은 일을 다른 API 로 계속 할 수 있으면 DESIGN, 못 하게 됐으면 FEAT
-- DEAD vs DESIGN: 호출자가 없어서면 DEAD, 호출 경로를 옮겨서면 DESIGN
-- 테스트 함수: 이유 문장이 없으면, 검증하던 대상을 이 커밋에서 지웠다는 것이 \
-화면에 보일 때만 DEAD"""
+- DEAD vs DESIGN: 호출자가 없어서면 DEAD, 호출 경로를 옮겨서면 DESIGN"""
 
 
 @dataclass(frozen=True)
@@ -289,7 +303,7 @@ class LlmCandidate:
 
 @dataclass
 class Classifier:
-    """규칙 + 모델 + (선택) LLM."""
+    """모델 + (선택) LLM 이 라벨을 고르고, 규칙이 근거 등급과 인용을 댄다."""
 
     model: ReasonModel = field(default_factory=ReasonModel)
     llm: LlmCandidate | None = None
@@ -306,68 +320,43 @@ class Classifier:
         return f"{CLASSIFIER_VERSION}+llm:{self.llm.runner.model}"
 
     def classify(self, record: dict[str, Any]) -> Classification:
-        """레코드 하나. 순서는 모듈 독스트링 "근거가 먼저다"."""
+        """레코드 하나. 순서는 모듈 독스트링 "어떻게 고르나"."""
         return replace(self._classify(record), version=self.version)
 
     def _classify(self, record: dict[str, Any]) -> Classification:
         """`classify` 의 본체. 버전은 `classify` 가 덧씌운다."""
         record_id = record_id_of(record)
         sentences = find_reason_sentences(record)
-        replacement = _usable_replacement(record)
-
-        if not sentences and replacement is None:
-            return Classification(
-                record_id, UNKNOWN_LABEL, UNKNOWN, "", "", "", 0.0, note="근거 없음"
-            )
-
         candidate = self.llm.propose(record) if self.llm is not None else None
-        scores = self._scores(record, sentences, candidate)
-        # 대체 코드는 있는데 규칙·모델·LLM 이 모두 0 이면 어느 이유인지 말할 신호가 없다.
-        # 그대로 두면 동점 규칙이 §11-1 첫 순위(SEC)를 0.9 로 고른다 - 모델이 학습되지 않은
-        # 채(`--records` 에 라벨과 이어지는 건이 없을 때) 돌리면 실제로 그렇게 된다.
+        scores = self._scores(record, candidate)
+        # 모델이 학습되지 않았고 LLM 도 답하지 않았으면 어느 이유인지 말할 신호가 없다. 그대로
+        # 두면 동점 규칙이 §11-1 첫 순위(SEC)를 고른다 - `--records` 에 라벨과 이어지는 건이
+        # 없을 때 실제로 그렇게 된다.
         if max(scores.values()) <= 0.0:
             return Classification(
-                record_id,
-                UNKNOWN_LABEL,
-                UNKNOWN,
-                "",
-                "",
-                "",
-                0.0,
-                scores=scores,
-                note="대체 코드는 있으나 어느 이유인지 받칠 신호가 없다",
+                record_id, UNKNOWN_LABEL, UNKNOWN, "", "", "", 0.0, scores=scores, note="신호 없음"
             )
         backed = {sentence.label for sentence in sentences}
         label = max(
             scores, key=lambda reason: (scores[reason], reason in backed, -_priority(reason))
         )
+        if label == UNKNOWN_LABEL:
+            return Classification(record_id, UNKNOWN_LABEL, UNKNOWN, "", "", "", 0.0, scores=scores)
+        replacement = _usable_replacement(record)
         return self._grade(record_id, label, sentences, replacement, candidate, scores)
 
     def _scores(
-        self,
-        record: dict[str, Any],
-        sentences: Sequence[ReasonSentence],
-        candidate: tuple[str, str] | None,
+        self, record: dict[str, Any], candidate: tuple[str, str] | None
     ) -> dict[str, float]:
-        """이유 7종 모두의 점수. 규칙은 그 라벨을 가리키는 이유 문장의 비율, 모델은 확률,
-        LLM 은 그 라벨을 골랐으면 1. 셋 다 [0, 1] 이다.
+        """이유 8종(UNK 포함)의 점수 = 모델 확률 + LLM 이 고른 라벨에 `WEIGHT_LLM`.
 
-        후보를 문장의 키워드 라벨로 **자르지 않는다.** 처음엔 잘랐는데, 키워드 라벨은 잡음이
-        커서 정답을 후보에서 빼 버렸다. 예비 200건에서 사람이 DEAD 라 한 23건의 문장 키워드
-        라벨은 DESIGN 72 · BUG 18 · PERF 10 · DEAD 3 이었다 (PR 본문의 `clean`·`simplify`
-        같은 단어). 모델은 그 23건에 DEAD 확률을 평균 0.54 줬는데도 DEAD 가 후보에 없어 200건
-        중 DEAD 가 2건만 나왔다. "근거가 있나" 는 UNK 를 가르는 데만 쓰고, "어느 이유인가" 는
-        세 구성요소가 점수로 정한다.
+        규칙 문장의 키워드 라벨은 표를 던지지 않는다 (모듈 독스트링 "어떻게 고르나").
         """
-        votes = Counter(sentence.label for sentence in sentences)
-        total = sum(votes.values())
         probabilities = self.model.predict_proba(record)
         llm_label = candidate[0] if candidate else None
         return {
-            reason: WEIGHT_RULE * (votes[reason] / total if total else 0.0)
-            + WEIGHT_MODEL * probabilities.get(reason, 0.0)
-            + WEIGHT_LLM * (1.0 if reason == llm_label else 0.0)
-            for reason in REASONS
+            reason: probabilities.get(reason, 0.0) + (WEIGHT_LLM if reason == llm_label else 0.0)
+            for reason in REASON_LABELS
         }
 
     def _grade(
@@ -384,8 +373,10 @@ class Classifier:
         1. 그 라벨의 이유 문장이 삭제된 함수를 이름으로 가리킨다 -> EXPLICIT (원문 인용)
         2. 그 라벨의 이유 문장은 있는데 이 함수까지 닿지 않는다 -> INFERRED (가이드 §6.1.1 E2)
         3. 대체 코드가 있다 -> INFERRED, 근거 ① (`diff:replacement`)
-        4. 이유 문장은 있는데 키워드가 다른 이유를 가리켰고, 라벨은 모델·LLM 이 골랐다 ->
-           INFERRED, 하한 0.5. 가장 약한 경우라 신뢰도를 올리지 않는다
+        4. LLM 이 같은 라벨을 골랐다 -> INFERRED, 하한 0.5, 근거 문장은 LLM 이 쓴 것
+        5. 이유 문장은 있는데 키워드가 다른 이유를 가리켰다 -> INFERRED, 하한 0.5, 그 문장
+        6. 모델만 골랐다 -> INFERRED, 하한 0.5, 근거 문장 없음. 4~6 은 가장 약한 경우라 신뢰도를
+           올리지 않는다
 
         2 가 3 보다 먼저인 것은 신뢰도 순서가 아니다 (2 는 0.6, 3 은 최대 0.9). 같은 라벨의 이유
         문장은 **왜**를 말하고, 대체 코드는 무엇이 이어받았는지만 말해 어느 이유도 받치지 않는다.
@@ -437,18 +428,43 @@ class Classifier:
                 scores=scores,
                 note=note,
             )
-        # 근거가 없으면 `classify` 가 이미 UNK 로 돌려보냈다 - 여기 오면 이유 문장이 있다.
-        passage = sentences[0].passage
+        if candidate is not None and candidate[0] == label and candidate[1]:
+            # LLM 이 화면(추가 헝크·삭제 본문·맥락)을 보고 댄 근거다. 위치를 규칙으로 확인하지
+            # 못했으니 source·locator 는 비우고 하한 신뢰도를 쓴다.
+            return Classification(
+                record_id,
+                label,
+                INFERRED,
+                candidate[1],
+                "",
+                "",
+                INFERRED_FLOOR,
+                scores=scores,
+                note="근거 문장: LLM 작성 (ADR-005)",
+            )
+        if sentences:
+            passage = sentences[0].passage
+            return Classification(
+                record_id,
+                label,
+                INFERRED,
+                passage.text,
+                passage.source,
+                passage.locator,
+                INFERRED_FLOOR,
+                scores=scores,
+                note=f"문장 키워드는 {sentences[0].label} 을 가리켰고 라벨은 모델·LLM 이 골랐다",
+            )
         return Classification(
             record_id,
             label,
             INFERRED,
-            passage.text,
-            passage.source,
-            passage.locator,
+            "",
+            "",
+            "",
             INFERRED_FLOOR,
             scores=scores,
-            note=f"문장 키워드는 {sentences[0].label} 을 가리켰고 라벨은 모델·LLM 이 골랐다",
+            note="모델만 이 라벨을 골랐다 - 화면에서 짚은 근거가 없다",
         )
 
 
@@ -538,6 +554,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model", default=None, help="LLM 모델 (기본: 공급자별 고정 모델)")
     parser.add_argument("--cache-dir", type=Path, default=None)
     parser.add_argument("--env-file", type=Path, default=Path(".env"))
+    parser.add_argument(
+        "--split",
+        choices=sorted(TRAIN_SPLITS),
+        default=None,
+        help="라벨 파일의 split 으로 나눠, 학습 split 으로 학습하고 이 split 만 예측한다 (#86)",
+    )
+    parser.add_argument(
+        "--final-test",
+        action="store_true",
+        help="--split test 를 허락한다. test 는 최종 1회만 (게이트 2 사전 등록)",
+    )
     return parser
 
 
@@ -551,8 +578,27 @@ def main(argv: Sequence[str] | None = None) -> int:
     if not records:
         print("레코드가 없다.", file=sys.stderr)
         return 1
-    labels = load_final_labels(load_jsonl(args.labels))
-    model = train_model(records, labels)
+    label_rows = load_jsonl(args.labels)
+    labels = load_final_labels(label_rows)
+    training = records
+    if args.split:
+        if args.split == "test" and not args.final_test:
+            print(
+                "test 는 최종 1회만 돈다 (게이트 2 사전 등록). "
+                "H 를 기록한 뒤 --final-test 로 돌려라.",
+                file=sys.stderr,
+            )
+            return 2
+        split_of = {str(row.get("record_id")): row.get("split") for row in label_rows}
+        training = [r for r in records if split_of.get(record_id_of(r)) in TRAIN_SPLITS[args.split]]
+        records = [r for r in records if split_of.get(record_id_of(r)) == args.split]
+        if not training or not records:
+            print(
+                f"split 으로 나눈 학습 {len(training)}건 / 예측 {len(records)}건 - 비었다.",
+                file=sys.stderr,
+            )
+            return 2
+    model = train_model(training, labels)
 
     llm = None
     if args.llm:
@@ -580,12 +626,16 @@ def main(argv: Sequence[str] | None = None) -> int:
         print(f"예측: {args.out} ({len(results)}건)", file=sys.stderr)
 
     print(f"우리 방식 ({classifier.version}) - {len(results)}건")
-    joined = sum(1 for record in records if record_id_of(record) in labels)
+    joined = sum(1 for record in training if record_id_of(record) in labels)
     print(
         f"  모델 학습: {'예' if model.trained else '아니오'}"
-        f" (확정 라벨 {len(labels)}건 중 레코드와 이어진 {joined}건, UNK 제외하고 학습)"
+        f" (확정 라벨 {len(labels)}건 중 학습 레코드와 이어진 {joined}건)"
     )
-    print("  학습에 쓴 레코드도 예측에 들어간다. 이 분포로 정확도를 말하지 않는다 (#86).")
+    if args.split:
+        trained_on = "+".join(TRAIN_SPLITS[args.split])
+        print(f"  {trained_on} 로 학습, {args.split} 예측 - 정확도는 classify.evaluate 로 잰다.")
+    else:
+        print("  학습에 쓴 레코드도 예측에 들어간다. 이 분포로 정확도를 말하지 않는다 (#86).")
     for name, counter in (
         ("라벨", Counter(result.label for result in results)),
         ("등급", Counter(result.evidence_grade for result in results)),

@@ -1,19 +1,23 @@
-"""이유 분류의 학습 부분 - 맥락 텍스트로 이유별 확률을 낸다 (#84). 담당: 희수
+"""이유 분류의 학습 부분 - 레코드 화면의 텍스트로 이유 8종의 확률을 낸다 (#84, #86). 담당: 희수
 
 무엇을:
-    레코드의 맥락 문장(`classify.rules.passages`)과 함수·파일 이름을 텍스트로 이어, TF-IDF +
-    로지스틱 회귀로 이유 7종(UNK 제외)의 확률을 낸다. CHARTER §7 의 "규칙 + scikit-learn" 중
+    레코드의 맥락 문장(`classify.rules.passages`), 함수·파일 이름, 같은 파일 추가 헝크, 그리고
+    화면의 모양(PR·이슈·리뷰가 붙었나, 테스트인가, 추가 헝크·대체 코드가 있나)을 텍스트로 이어
+    TF-IDF + 로지스틱 회귀로 이유 8종의 확률을 낸다. CHARTER §7 의 "규칙 + scikit-learn" 중
     scikit-learn 쪽이다. GPU 없이 노트북에서 도는 크기만 쓴다.
 
-왜 UNK 를 학습하지 않나:
-    UNK 는 "근거가 없다" 는 판정이고, 그건 분류기(`classify.classifier`)가 **근거가 있는지**로
-    정한다. 모델이 텍스트 모양만 보고 UNK 를 고르게 하면 근거가 있는데도 UNK 가 나오거나 그
-    반대가 된다. 모델은 근거가 있을 때 "어느 이유인가" 만 답한다.
+UNK 도 배운다 (m2, #86):
+    m1 은 UNK 를 배우지 않고, 분류기가 "이유 키워드 문장도 대체 코드도 없으면 UNK" 로 정했다.
+    500건 학습 300건 교차 검증에서 그 관문은 81건에 걸렸고 그중 사람 라벨 UNK 는 56건뿐이었다.
+    반대로 사람 UNK 135건 중 79건은 관문을 통과했다 - 긴 PR 본문에는 거의 늘 `fix`·`remove` 같은
+    키워드 문장이 있다. UNK 는 학습 데이터의 45%라 그것을 어떻게 가르느냐가 정확도의 절반이다.
+    그래서 UNK 를 다른 이유와 같이 확률로 내고, 화면의 모양을 특징으로 준다 (사람이 UNK 를 고르는
+    근거가 "맥락이 없다"·"추가 헝크가 없다" 같은 화면의 모양이다, 가이드 §6.3.1).
 
-지금 이 모델로 말할 수 있는 것:
-    거의 없다. 개발용 합의 102건(#84)은 PERF 1건·SEC 0건이고 저장소가 pydantic 하나다. 여기서는
-    **학습·예측이 끝까지 돈다**는 것만 확인한다. 특징·하이퍼파라미터는 train 300 / val 100 으로
-    정한다 (#86).
+특징·하이퍼파라미터를 고른 방법:
+    학습 300건 5겹 교차 검증 (`docs/reports/classifier_val.md`). 삭제된 코드 본문을 더하면 0.02
+    낮아져 넣지 않았다. 클래스 가중치(balanced)는 UNK·DESIGN 이 많은 분포에서 소수 클래스를 과하게
+    골라 0.04 낮아졌다.
 """
 
 from __future__ import annotations
@@ -27,26 +31,44 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 
-from classify.baselines import UNKNOWN_LABEL
 from classify.rules import passages
 
 # 특징·모델을 바꾸면 올린다. 분류기 버전 문자열에 들어간다.
-MODEL_VERSION = "m1"
+MODEL_VERSION = "m2"
+# 로지스틱 회귀 규제 (sklearn `C`). 학습 300건 교차 검증에서 1.0 보다 10.0 이 0.02 높았다.
+REGULARIZATION_C = 10.0
+# 추가 헝크는 상위 10% 가 6천 자를 넘는다. 긴 헝크 하나가 특징을 다 차지하지 않게 자른다.
+MAX_HUNK_TEXT_CHARS = 5000
+
+
+def shape_tokens(record: dict[str, Any]) -> str:
+    """화면의 모양을 낱말로. 맥락 텍스트에 나올 리 없는 `zz` 접두를 붙여 섞이지 않게 한다."""
+    context = record.get("context") or {}
+    flags = (
+        ("pr", context.get("pr_number") is not None),
+        ("issue", bool(context.get("issue_numbers"))),
+        ("review", bool(context.get("review_comments"))),
+        ("test", bool(record.get("is_test_code"))),
+        ("hunks", bool(record.get("added_hunks_same_file"))),
+        ("replacement", bool((record.get("replacement") or {}).get("code"))),
+    )
+    return " ".join(f"zz{'has' if present else 'no'}{name}" for name, present in flags)
 
 
 def record_text(record: dict[str, Any]) -> str:
-    """모델이 보는 텍스트. 규칙이 보는 맥락 문장 전부 + 함수·파일 이름.
+    """모델이 보는 텍스트. 맥락 문장 + 함수·파일 이름 + 화면 모양 + 같은 파일 추가 헝크.
 
     파일 이름은 규칙의 "이 함수를 가리키나" 판정에서는 뺐지만 (`rules.target_names`) 여기서는
-    둔다. 모델에는 어느 모듈에서 지워졌는지가 쓸모 있는 신호일 수 있고, 인용문이 아니라서
-    잘못 걸려도 EXPLICIT 을 만들지 않는다.
-
-    삭제된 코드 본문은 넣지 않았다. 넣으면 근거 ⑥(가이드 §6.2.1 "삭제된 코드 자체")을 모델이
-    배우는 셈인데, 모델이 본문에서 무엇을 보고 골랐는지는 인용할 수 없다. 넣을지는 val 로 본다.
+    둔다. 어느 모듈에서 지워졌는지가 쓸모 있는 신호일 수 있고, 인용문이 아니라서 잘못 걸려도
+    EXPLICIT 을 만들지 않는다.
     """
     lines = [passage.text for passage in passages(record)]
     lines.append(record.get("function_name") or "")
     lines.append(Path(record.get("file_path") or "").stem)
+    lines.append(shape_tokens(record))
+    hunks = record.get("added_hunks_same_file") or []
+    added = " ".join(str(hunk.get("added_body") or "") for hunk in hunks if isinstance(hunk, dict))
+    lines.append(added[:MAX_HUNK_TEXT_CHARS])
     return "\n".join(line for line in lines if line)
 
 
@@ -57,33 +79,24 @@ class ReasonModel:
     pipeline: Pipeline | None = None
 
     def fit(self, records: Sequence[dict[str, Any]], labels: Sequence[str]) -> ReasonModel:
-        """학습한다. UNK 는 뺀다 (모듈 독스트링). 이유가 두 종류 미만이면 학습하지 않는다.
+        """학습한다. 이유가 두 종류 미만이면 학습하지 않는다.
 
         한 종류만으로는 로지스틱 회귀가 학습되지 않는다. 그때 예외를 내면 분류기 전체가
-        멈추는데, 모델은 세 구성요소 중 하나라 빠져도 규칙만으로 돈다. 빈 확률을 내고 계속한다.
+        멈추는데, 모델은 구성요소 중 하나라 빠져도 LLM 만으로 돈다. 빈 확률을 내고 계속한다.
         """
-        pairs = [
-            (record_text(record), label)
-            for record, label in zip(records, labels, strict=True)
-            if label != UNKNOWN_LABEL
-        ]
-        if len({label for _text, label in pairs}) < 2:
+        texts = [record_text(record) for record in records]
+        if len(set(labels)) < 2:
             self.pipeline = None
             return self
         pipeline = Pipeline(
             [
                 ("tfidf", TfidfVectorizer(ngram_range=(1, 2), sublinear_tf=True)),
-                # 클래스가 크게 치우쳐 있다 (DESIGN 37 : PERF 1). 가중치 없이 두면 DESIGN 만 낸다.
-                ("clf", LogisticRegression(class_weight="balanced", max_iter=1000)),
+                ("clf", LogisticRegression(C=REGULARIZATION_C, max_iter=3000)),
             ]
         )
-        try:
-            pipeline.fit([text for text, _label in pairs], [label for _text, label in pairs])
-        except ValueError:
-            # 텍스트에 토큰이 하나도 없으면 TF-IDF 가 "empty vocabulary" 로 실패한다 (맥락이 전부
-            # 비었거나 한 글자 토큰뿐인 레코드). 위와 같은 이유로 멈추지 않고 모델 없이 간다.
-            self.pipeline = None
-            return self
+        # m1 은 맥락이 모두 빈 레코드에서 TF-IDF 가 "empty vocabulary" 로 실패할 수 있어 그 예외를
+        # 받았다. m2 는 `shape_tokens` 가 늘 낱말을 넣어 그 경우가 없다.
+        pipeline.fit(texts, list(labels))
         self.pipeline = pipeline
         return self
 
@@ -94,7 +107,7 @@ class ReasonModel:
 
     @property
     def classes(self) -> tuple[str, ...]:
-        """학습에 나온 이유들. 학습 데이터에 없던 이유(지금은 SEC)는 확률이 0 이다."""
+        """학습에 나온 이유들. 학습 데이터에 없던 이유(500건 학습 split 의 PERF)는 확률이 0."""
         if self.pipeline is None:
             return ()
         return tuple(str(label) for label in self.pipeline.classes_)

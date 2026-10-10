@@ -48,7 +48,6 @@ from classify.baseline_keyword import KEYWORD_RULES
 from classify.baseline_llm import (
     CALL_ERRORS,
     DEFAULT_PROVIDER,
-    LABEL_DEFINITIONS,
     MAX_DIFF_CHARS,
     PROVIDERS,
     LlmBaseline,
@@ -59,10 +58,10 @@ from classify.baselines import UNKNOWN_LABEL, record_id_of
 from classify.labels import EVIDENCE_GRADES, REASON_LABELS
 from classify.model import MODEL_VERSION, ReasonModel
 from classify.rules import RULES_VERSION, ReasonSentence, find_reason_sentences, passages
-from pipeline.select_repos import load_env_file, resolve_cache_dir
+from pipeline.select_repos import load_env_file
 
 METHOD_OURS = "ours"
-CANDIDATE_PROMPT_VERSION = "c1"
+CANDIDATE_PROMPT_VERSION = "c2"
 CLASSIFIER_VERSION = f"{RULES_VERSION}+{MODEL_VERSION}+{CANDIDATE_PROMPT_VERSION}"
 
 EXPLICIT, INFERRED, UNKNOWN = EVIDENCE_GRADES
@@ -88,6 +87,47 @@ INFERRED_FLOOR = 0.5
 
 MAX_CONTEXT_CHARS = 6000
 MAX_REPLACEMENT_CHARS = 2000
+MAX_HUNKS_CHARS = 3000
+# 기준선 B 캐시 옆. 커밋하는 이유는 `classify.baseline_llm.DEFAULT_CACHE_DIR`.
+DEFAULT_CACHE_DIR = Path("datasets") / "llm_cache" / "classifier"
+
+# c2 프롬프트에 넣는 라벨 가이드 v3 요약 (§3 판정 순서, §4, §5, §6.2.1, §6.3.3, §6.4). 사람 라벨이
+# 이 기준으로 정해졌으니 LLM 도 같은 기준으로 답해야 한다. 이유 정의와 헷갈리는 쌍은 라벨러용
+# AI 보조 프롬프트(`docs/labeling_ai_prompt.md`)의 문구를 줄여 썼다 - 같은 기준을 두 벌로 쓰지
+# 않으려고. 체크리스트 전체를 넣지 않은 것은 답이 길어져 `MAX_ANSWER_TOKENS`(256, 게이트 2 사전
+# 등록)에 안 들어가서다. 기준선 B 는 이것을 받지 않는다 - 기준선 B 의 정의가 "직접 질의" 다.
+CANDIDATE_GUIDE = """이유 8종:
+- BUG: 잘못된 동작(오류·크래시·경계 조건·경쟁 조건)을 고치려고 지웠다. 'fix' 낱말만으로는 아니다
+- PERF: 결과는 같고 시간·메모리 비용을 줄이려고 지웠다. 테스트·벤치마크 삭제에는 쓰지 않는다
+- SEC: 취약점·위험 패턴(신뢰할 수 없는 입력의 eval·pickle·shell, 약한 암호, 비밀 노출)을 없앴다
+- LIB: 이 커밋에서 직접 구현을 외부·표준 라이브러리 호출로 바꿨다
+- DEAD: 호출되지 않아 지웠다 (테스트면 검증할 대상이 없어져서)
+- DESIGN: 구조·책임·인터페이스를 바꾸면서 이 코드가 맞지 않게 됐다. 같은 일은 다른 자리에서 계속된다
+- FEAT: 사용자가 쓰던 기능 자체를 없앴다 (폐기·지원 종료·옵션 제거)
+- UNK: 아래 화면으로는 근거를 댈 수 없다
+
+판단 순서:
+1. 배울 게 없는 삭제면 UNK - 같은 본문이 추가된 코드에 다른 이름·위치로 있다\
+(순수 이동·이름 바꾸기), 줄이 포맷만 바뀌었다, 경로가 vendor/·third_party/ 거나 생성 코드다
+2. 맥락 문장이 삭제의 "왜"를 말하면 그 이유를 따른다. 지웠다·바꿨다는 사실이나 fix·cleanup·\
+refactor 같은 낱말만 있으면 이유가 아니다
+3. 그런 문장이 없거나 이 함수에 닿지 않으면 화면의 코드로 추론한다 - 대체 코드나 추가된 코드가 \
+삭제된 일을 이어받나, 이 함수를 부르던 자리가 바뀌었나, 삭제된 본문 자체가 이유를 드러내나 \
+(deprecated 경고, 빈 스텁, 제거 예정 주석, @skip)
+4. 커밋이 큰 작업을 하고 이 함수가 그 영역에 있다는 것만으로는 근거가 아니다. 테스트 함수가 \
+함께 지워졌다는 사실도 근거가 아니다. 근거가 없으면 UNK
+5. 이유가 둘이면 수단이 아니라 이유, 결과가 아니라 원인을 고른다 ("refactor to fix race" 는 BUG)
+
+헷갈리는 쌍:
+- LIB vs DESIGN: 외부·표준 라이브러리가 일을 이어받으면 LIB, \
+우리 코드의 다른 자리가 이어받으면 DESIGN
+- LIB vs DEAD: 교체가 이 커밋에서 일어났으면 LIB, 이미 끝났고 잔재만 치우면 DEAD
+- DEAD vs FEAT: 공개 표면(공개 API·CLI·설정·문서)에서 사라지면 FEAT, \
+내부 함수가 호출자를 잃었으면 DEAD
+- DESIGN vs FEAT: 같은 일을 다른 API 로 계속 할 수 있으면 DESIGN, 못 하게 됐으면 FEAT
+- DEAD vs DESIGN: 호출자가 없어서면 DEAD, 호출 경로를 옮겨서면 DESIGN
+- 테스트 함수: 이유 문장이 없으면, 검증하던 대상을 이 커밋에서 지웠다는 것이 \
+화면에 보일 때만 DEAD"""
 
 
 @dataclass(frozen=True)
@@ -154,12 +194,17 @@ class Classification:
 
 
 def build_candidate_prompt(record: dict[str, Any]) -> str:
-    """LLM 에 줄 본문. 기준선 B 와 달리 **맥락 전체와 대체 코드**를 준다 - 그 차이가 우리 방식이다.
+    """LLM 에 줄 본문. 기준선 B 와 달리 **라벨러가 보는 화면 전체**를 준다 - 그 차이가 우리
+    방식이다.
 
     맥락은 `classify.rules.passages` 가 만든 문장을 위치와 함께 준다. 같은 문장을 규칙과 LLM
     이 함께 보므로, LLM 이 근거로 든 문장이 어디 있었는지 대조할 수 있다.
+
+    c2 (#86) 가 c1 에 더한 것: 파일·함수·테스트 여부, 같은 파일 추가 헝크, 그리고 라벨 가이드 v3
+    의 판정 순서와 헷갈리는 쌍(`CANDIDATE_GUIDE`). c1 은 이유 정의 한 줄씩과 맥락·삭제 코드·대체
+    코드만 줬다. 사람 라벨은 추가 헝크를 보고 가이드 순서대로 정한 것이라, 그것을 안 주고 같은
+    답을 기대할 수 없다 (val 비교는 `docs/reports/classifier_val.md`).
     """
-    definitions = "\n".join(f"- {code}: {meaning}" for code, meaning in LABEL_DEFINITIONS)
     context_lines: list[str] = []
     used = 0
     for passage in passages(record):
@@ -174,15 +219,38 @@ def build_candidate_prompt(record: dict[str, Any]) -> str:
     replacement = ((record.get("replacement") or {}).get("code") or "(없음)")[
         :MAX_REPLACEMENT_CHARS
     ]
+    function = record.get("function_signature") or record.get("function_name") or ""
     return (
-        "아래 함수가 왜 삭제됐는지 한 가지로 분류하라.\n\n"
-        f"분류 체계:\n{definitions}\n\n"
+        "아래 함수가 왜 삭제됐는지 이유 8종 중 하나로 분류하라.\n\n"
+        f"{CANDIDATE_GUIDE}\n\n"
+        f"파일: {record.get('file_path') or ''}\n"
+        f"함수: {function}\n"
+        f"테스트 코드: {'예' if record.get('is_test_code') else '아니오'}\n\n"
         f"맥락 (줄 앞 [ ] 는 출처):\n{context}\n\n"
         f"삭제된 코드:\n```\n{deleted}\n```\n\n"
+        f"같은 커밋이 이 파일에 추가한 코드:\n```\n{added_hunks_text(record)}\n```\n\n"
         f"같은 자리에 들어온 대체 코드:\n```\n{replacement}\n```\n\n"
         "답은 정확히 한 줄로, `라벨|근거` 형식으로만 쓴다. 라벨은 위 8개 중 하나이고, 근거는 "
-        "맥락이나 코드에서 이유를 드러내는 부분을 한 문장으로 쓴다. 근거가 없으면 UNK 를 고른다."
+        "위 화면의 어디를 보고 판단했는지 한 문장으로 쓴다."
     )
+
+
+def added_hunks_text(record: dict[str, Any]) -> str:
+    """같은 파일 추가 헝크를 `[k/N] new_start S` 머리 줄과 본문으로 (`tools/label_cli` 화면과
+    같은 꼴).
+
+    `MAX_HUNKS_CHARS` 에서 자른다. 추가 헝크는 중앙값이 0 이지만 상위 10% 는 6천 자를 넘는다.
+    """
+    hunks = [hunk for hunk in record.get("added_hunks_same_file") or [] if isinstance(hunk, dict)]
+    if not hunks:
+        return "(이 커밋이 이 파일에 추가한 줄 없음)"
+    pieces = [
+        f"[{position}/{len(hunks)}] new_start {hunk.get('new_start')}\n"
+        f"{hunk.get('added_body') or ''}"
+        for position, hunk in enumerate(hunks, start=1)
+    ]
+    text = "\n".join(pieces)
+    return text if len(text) <= MAX_HUNKS_CHARS else text[:MAX_HUNKS_CHARS] + "\n... (이하 생략)"
 
 
 @dataclass
@@ -492,7 +560,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         caller = caller_from_env(args.provider)
         if caller is None:
             return 2
-        cache_dir = args.cache_dir or resolve_cache_dir(None) / "llm_classifier"
+        cache_dir = args.cache_dir or DEFAULT_CACHE_DIR
         runner = LlmBaseline(
             caller,
             model=args.model or PROVIDERS[args.provider].model,

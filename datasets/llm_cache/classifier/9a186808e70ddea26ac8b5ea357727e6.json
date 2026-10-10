@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #41408이 벤치마킹 스위트를 BenchmarkingConfig/BenchmarkRunner 기반으로 전면 재구성하는 리팩터이며, 타이밍 측정 방식이 새 프레임워크로 대체되면서 기존 stop() 타이머 메서드가 제거됨."}

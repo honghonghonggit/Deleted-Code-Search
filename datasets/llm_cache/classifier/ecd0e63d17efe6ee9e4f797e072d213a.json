@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #292가 테스트 서버를 스레드로 서빙하도록 바꾸면서 run_in_executor로 감싸던 이 래퍼가 더 이상 맞지 않게 됐다."}

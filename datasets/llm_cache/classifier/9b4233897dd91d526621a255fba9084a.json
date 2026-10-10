@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`__contains__`가 `__key`에서 PEP570 위치 전용 매개변수 `key, /`로 시그니처가 바뀌어 같은 일을 계속하도록 재작성된 것이 같은 자리 대체 코드로 보인다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 array-api-extra를 v0.11.2로 올린다고 밝히고, 이 파일은 sklearn/externals의 외부 라이브러리 번들 코드라 버전 업으로 해당 구현이 외부 라이브러리 쪽으로 이전된 것이다."}

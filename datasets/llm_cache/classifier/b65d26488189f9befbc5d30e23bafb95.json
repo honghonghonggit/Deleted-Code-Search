@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|삭제된 `async def is_disconnected`는 클래스 내부 메서드였는데 같은 자리에 들여쓰기만 클래스 레벨로 바뀐 동일 본문이 들어왔고, 커밋 메시지가 반복 스텁을 공유 헬퍼로 정리하는 작업이라고 밝히고 있다."}

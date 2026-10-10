@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|커밋 메시지가 \"Revert 'Unify query token auth in http views'\"로, 쿼리 토큰 인증 통합을 되돌리면서 이 인증 테스트가 삭제됐다."}

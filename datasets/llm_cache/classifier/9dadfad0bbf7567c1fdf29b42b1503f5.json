@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지는 보안 강화와 hook_manager.py 제거를 말할 뿐, 이 파일의 handle_console_capture 삭제 이유를 직접 밝히지 않고 같은 자리에 대체 코드도 없다."}

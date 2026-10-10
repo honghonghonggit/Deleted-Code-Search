@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 cross_validation.StratifiedKFold를 0.20에서 제거 대상으로 명시했고, 이 테스트가 그 제거된 클래스를 호출하므로 검증 대상이 없어져 삭제됐다."}

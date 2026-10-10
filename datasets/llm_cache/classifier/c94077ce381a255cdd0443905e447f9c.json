@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지에 \"normalize_components in sparsePCA\"가 명시되어 있고, 테스트가 normalize_components=False 옵션 자체의 지원 종료(NotImplementedError)를 검증하므로 기능 폐기로 제거됨."}

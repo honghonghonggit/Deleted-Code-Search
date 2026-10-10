@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"Replaced two demo methods with one: get_ip_location\"이라며 두 데모 메서드를 하나로 대체했다고 밝히고, 같은 커밋이 get_ip_location을 추가해 같은 일(IP 위치 조회)을 다른 API로 계속한다."}

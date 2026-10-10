@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored dependency 제거를 목표로 한다고 밝히고 있어, chardet 내부 구현이 외부 라이브러리 호출로 대체됐다."}

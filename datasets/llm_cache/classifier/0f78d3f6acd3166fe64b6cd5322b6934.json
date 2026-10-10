@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 들어온 대체 코드가 get_segmented_page를 None 스텁 대신 실제 SegmentedPdfPage를 생성하도록 구현을 바꿨고, PR 본문이 \"All backends now implement get_segmented_page() and create SegmentedPdfPage objects\"라며 이 함수의 책임 재편을 명시한다."}

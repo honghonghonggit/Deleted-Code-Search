@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"grouping benchmarks with the same setup in common classes, removing a lot of the setup functions\"라고 밝혀, 공통 클래스로 setup을 통합하면서 이 개별 setup이 불필요해졌다."}

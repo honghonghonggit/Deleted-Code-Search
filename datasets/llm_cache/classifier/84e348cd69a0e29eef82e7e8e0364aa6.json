@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`__modify_schema__`가 클래스메서드에서 인스턴스 메서드로 바뀌어 같은 자리에 대체 코드가 들어왔고, pydantic_core 기반으로 스키마 생성 구조가 재편되면서 인터페이스가 바뀐 것이다."}

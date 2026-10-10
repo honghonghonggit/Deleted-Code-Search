@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 sync 지원을 전면 제거한다고 밝혀 테스트에서 검증하던 sync WSGI 대상이 사라졌고, 이 파일에 대체 코드가 추가되지 않았다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 VERSIONED_EXPORT 기능 플래그를 제거하고 기능을 영구 활성화한다고 명시하며, 이 테스트는 플래그를 False로 패치해 검증하던 테스트라 검증 대상 기능 자체가 사라졌다."}

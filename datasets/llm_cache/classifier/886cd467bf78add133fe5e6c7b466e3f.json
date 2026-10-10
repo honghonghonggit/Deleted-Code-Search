@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|테스트가 새 통합 메모리 API(Memory.remember 직접 호출)로 재작성되면서 이벤트 버스 기반 저장 완료 콜백을 검증하던 대상이 사라졌고, 대체 코드도 없다."}

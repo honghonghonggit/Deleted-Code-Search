@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "SEC|커밋 메시지가 CVE-2025-64460·CVE-2025-12084 관련 minidom 문서 검사 우회 워크어라운드를 제거한다고 밝혀, 취약점 대응으로 삭제된 코드다."}

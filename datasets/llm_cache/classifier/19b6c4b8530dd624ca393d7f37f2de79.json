@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 제목이 \"Replaced unnecessary setUp()\"이라 하고, 같은 커밋이 setUp 안의 RequestFactory()를 클래스 속성 factory = RequestFactory()로 옮겨 같은 일을 다른 자리에서 계속한다."}

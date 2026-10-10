@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 스키마 25 미만 DB 지원 제거를 명시했고, 이 테스트는 schema_version 24를 patch해 검증하던 대상이 사라져 함께 삭제됐다."}

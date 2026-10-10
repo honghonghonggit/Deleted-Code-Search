@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|tearDown에서 self.hass.stop()을 하던 동기식 테스트 구조가 pytest 픽스처(setup_comp)와 async 테스트로 재구성되면서 정리 책임이 프레임워크로 옮겨졌다."}

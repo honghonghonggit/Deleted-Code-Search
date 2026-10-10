@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`create_custom_forward` 래퍼를 없애고 `gradient_checkpointing_func`로 `layer_module.__call__`을 직접 넘기도록 호출 경로를 바꾼 리팩터링이라, 같은 일이 다른 자리에서 계속된다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 기존 utils를 `cached_file` 기반 새 버전으로 migrate하고 해당 utils를 제거한다고 밝혀, `_raise_for_status`의 HTTP 오류 정제 역할이 외부 라이브러리 호출로 대체됐다."}

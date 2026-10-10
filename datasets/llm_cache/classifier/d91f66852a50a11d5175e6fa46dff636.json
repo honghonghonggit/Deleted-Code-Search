@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 `HeaderTypes` 유니온과 `Headers` 인스턴스 분기를 받는 새 `__init__`이 들어와 헤더 초기화 책임이 확장된 인터페이스로 재구성됐다."}

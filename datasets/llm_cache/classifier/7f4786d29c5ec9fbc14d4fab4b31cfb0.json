@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Adapters\", PR 제목이 \"Adapter refactoring\"으로 어댑터 구조 재편을 말하며, request 메서드가 send/read/close를 조합하던 어댑터 계층의 일이 재구성되면서 이 코드가 맞지 않게 됐다."}

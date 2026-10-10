@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문은 문서 리팩터링과 예제 테스트 도구 전환만 언급할 뿐, 이 테스트용 execute 함수 삭제 이유를 드러내지 않는다."}

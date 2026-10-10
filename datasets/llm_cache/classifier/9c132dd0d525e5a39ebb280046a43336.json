@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 mixture.DPGMM 클래스 자체를 0.20에서 제거 대상으로 명시했고, 이 함수는 그 클래스의 메서드이므로 기능 폐기로 삭제됐다."}

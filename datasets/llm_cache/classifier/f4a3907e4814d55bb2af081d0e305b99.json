@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG| `__del__`에서 `ClientState.OPENED` 접근 시 `AttributeError: 'NoneType' object has no attribute 'OPENED'`가 발생하는 #2024를 닫기 위해 삭제했고, PR 본문도 `__del__`의 불안정한 동작을 문제로 명시한다."}

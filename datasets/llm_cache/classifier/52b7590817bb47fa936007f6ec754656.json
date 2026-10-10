@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|PR 본문은 CSVImportCommand·ExcelImportCommand의 리팩터링과 reader 옵션 버그 수정만 언급할 뿐, 이 테스트 함수나 ExcelImportCommand의 DatabaseNotFoundError 동작을 이름으로 가리키지 않고, 이 파일에 추가·대체된 코드도 없어 삭제 이유를 화면만으로 판단할 수 없다."}

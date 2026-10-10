@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|클래스 자체의 `_validate_data`가 제거되고, fit/partial_fit은 추가된 `_validate_data(X, y, accept_sparse=..., ensure_2d=True, ...)` 호출로, 나머지 메서드들은 새 `_check_X`로 검증 책임이 재편되었다."}

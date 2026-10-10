@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Playwright 제거 후 CDP 기반 이벤트 API로 전환하면서 PDF 자동 다운로드 설정이 BrowserProfile의 downloads_path로 이관되어, 이 프로퍼티가 새 구조에 맞지 않게 됐다."}

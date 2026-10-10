@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|삭제된 `_extract_env_vars` 함수의 제거 이유를 직접 설명하는 맥락이 없고, 커밋/PR은 테스트 환경·VCR·conftest 재구성과 flaky 테스트 수정에 관한 내용뿐이라 이 함수 삭제와의 연관을 판단할 수 없다."}

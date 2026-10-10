@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 get_segmented_page가 실제 SegmentedPdfPage를 생성하도록 재구현됐고, PR 본문이 \"All backends now implement get_segmented_page() and create SegmentedPdfPage objects\"라며 인터페이스 변경을 명시한다."}

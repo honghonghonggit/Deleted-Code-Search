@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 \"switch to external bubus lib\"라고 외부 라이브러리로 전환했음을 밝히고 있어, 이벤트버스 모델의 __str__을 포함한 구현이 bubus로 대체됐다."}

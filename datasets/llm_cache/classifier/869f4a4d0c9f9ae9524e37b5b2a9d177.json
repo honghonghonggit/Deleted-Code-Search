@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 예제를 Python 스크립트 대신 YAML 설정으로 옮긴다고 밝혀, 같은 예제 로딩이 설정 기반 경로로 대체됐다."}

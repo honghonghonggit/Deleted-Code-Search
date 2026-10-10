@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "PERF|삭제된 함수의 docstring이 \"Workaround for performance issues in minidom document checks\"라고 성능 문제 회피용임을 밝히고, 커밋 메시지가 CPython 업스트림 수정으로 이 우회가 불필요해졌다고 설명한다."}

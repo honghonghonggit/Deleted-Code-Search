@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 deprecation timeline에 따라 get_indexes()를 제거했다고 명시하며, 기능 자체를 폐기한 것이다."}

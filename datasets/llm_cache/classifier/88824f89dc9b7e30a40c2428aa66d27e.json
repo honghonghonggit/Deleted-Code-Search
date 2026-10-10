@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 테스트 함수가 검증하던 `do_call_method`의 sql transport 예외 처리 코드가 같은 커밋에서 사라졌고, 대체 코드나 호출자 변경이 화면에 없어 검증 대상이 없어져 삭제된 것으로 보인다."}

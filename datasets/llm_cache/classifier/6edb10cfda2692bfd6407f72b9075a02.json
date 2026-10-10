@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 AbstractDocumentBackend.__init__을 in_doc: InputDocument를 받는 새 시그니처로 다시 추가해 초기화 책임이 새 백엔드 추상화 구조로 옮겨졌다."}

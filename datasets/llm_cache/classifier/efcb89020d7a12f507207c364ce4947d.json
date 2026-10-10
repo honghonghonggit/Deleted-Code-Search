@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 serve.py 단일 파일을 책임별 여러 모듈로 나누는 리팩터라 밝히고, 미들웨어 등록 코드가 새 모듈 구조의 다른 자리로 옮겨졌을 뿐 같은 일(요청 ID 설정)은 계속되므로."}

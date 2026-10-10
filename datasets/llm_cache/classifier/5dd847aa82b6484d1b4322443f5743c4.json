@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `Functional`과 `Sequential`의 ad-hoc 컨텍스트 인자 전파를 제거하고 `__call__`/`CallContext` 기반의 일관된 흐름으로 바꾼다고 밝히며, 리뷰 답변도 `__call__`이 컨텍스트를 캡처해 `call`로 전달하는 새 구조를 설명하므로 전파 책임이 다른 자리로 이동한 구조 변경이다."}

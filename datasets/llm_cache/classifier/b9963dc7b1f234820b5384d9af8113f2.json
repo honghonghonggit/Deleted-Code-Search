@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 django.utils.six의 Python 2 호환 API 제거를 명시하고, itervalues는 그 공개 호환 API의 일부였다."}

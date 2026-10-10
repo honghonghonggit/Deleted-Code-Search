@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|테스트가 부르던 DoclingParseDocumentBackend의 랜덤 페이지 접근이 제거되고 iter_pages() 기반으로 재편되면서, 페이지 백엔드의 close() 스텁을 호출하던 경로가 사라져 잔재만 남아 삭제됐다."}

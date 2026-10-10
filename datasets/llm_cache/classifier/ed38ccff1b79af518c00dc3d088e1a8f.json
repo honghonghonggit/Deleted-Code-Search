@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 main_v0.py 파일과 관련 기능을 제거한다고 명시했고, 삭제된 코드는 `/old` 공개 엔드포인트(read_index)로 대체 코드 없이 사라졌다."}

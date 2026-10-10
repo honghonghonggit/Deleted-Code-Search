@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 DEFAULT_FILE_STORAGE·STATICFILES_STORAGE 설정을 제거한다고 밝혔고, 이 테스트는 그 제거된 설정의 접근 동작을 검증하던 것이다."}

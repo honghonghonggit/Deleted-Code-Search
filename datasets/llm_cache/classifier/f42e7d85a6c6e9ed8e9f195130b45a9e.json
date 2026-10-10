@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Refactor CLI to use Click instead of our custom argparse based framework\"라고 밝히고, 같은 파일에 Click 기반 `status` 커맨드와 `_compile_arguments`·`_say_remote_command_reply` 등이 추가되어 원격 제어 CLI 기능이 다른 구조로 이어받아졌다."}

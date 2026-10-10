@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 DocTags 역직렬화를 파이프라인 내부 대신 docling-core의 DocTagsDocument.from_doctags_and_image_pairs로 재사용하도록 바꿨다고 밝히고, 추가된 코드가 그 라이브러리 호출로 대체하고 있다."}

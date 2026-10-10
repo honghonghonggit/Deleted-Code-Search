@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"remove pydantic V1 comparisons from benchmark suite\"라고 벤치마크에서 pydantic V1 비교 기능 자체를 제거한다고 명시한다."}

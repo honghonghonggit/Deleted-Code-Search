@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지 \"delete packages\"와 PR 본문은 vendored 의존성 제거만 밝힐 뿐, 이 __setitem__ 함수가 왜 지워졌는지(대체 구현·호출자 변경·기능 제거 등)를 화면의 코드로는 알 수 없다."}

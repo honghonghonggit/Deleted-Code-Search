@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 레거시 분리 훅(get_num_mm_encoder_tokens/get_num_mm_connector_tokens)을 get_mm_lora_token_counts()로 통합하는 리팩터로, 구조·추상화 변경에 따라 제거됨."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 이 파일에 `AbstractDocumentBackend.__init__(self, in_doc, path_or_stream)`를 추가해 생성자 인터페이스가 `InputDocument` 기반으로 바뀌었고, 삭제된 `__init__`의 역할을 새 클래스 계층의 생성자가 이어받는다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"Removes all Selenium support\", \"Playwright is now the sole WebDriver backend\", \"Removes existing feature or API\"라며 Selenium 폴백 기능 자체를 제거한다고 명시한다."}

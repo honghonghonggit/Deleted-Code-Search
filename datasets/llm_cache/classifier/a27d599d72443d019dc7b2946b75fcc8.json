@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|`ix` 인덱서 자체를 제거하는 DEPR 작업(#27620)의 일부로, `ix` 전용 deprecation 테스트가 더 이상 필요 없어져 삭제됨."}

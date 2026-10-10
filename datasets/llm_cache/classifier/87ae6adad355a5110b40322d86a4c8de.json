@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|PR 본문은 test_types.py를 여러 파일로 분할하고 TypeAdapter로 마이그레이션한다고만 말할 뿐, 이 테스트 함수를 이름으로 가리키며 삭제 이유를 밝히지 않고, 화면의 추가 코드에서 이 테스트가 검증하던 FilePath 동작을 이어받는 줄도 찾을 수 없다."}

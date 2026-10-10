@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Transport API가 request/response 시그니처로 바뀌면서 응답 컨텍스트 매니저 메서드들이 제거됨"}

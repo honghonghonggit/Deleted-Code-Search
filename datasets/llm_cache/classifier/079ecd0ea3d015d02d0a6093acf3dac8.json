@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 V0 Spec Decode workers 제거를 명시하고, 이 테스트가 검증하던 TypicalAcceptanceSampler(V0 스펙 디코딩 기능)가 공개 표면에서 사라졌기 때문이다."}

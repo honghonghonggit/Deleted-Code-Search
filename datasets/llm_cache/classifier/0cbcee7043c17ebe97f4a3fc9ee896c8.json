@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 py.test 전환을 말하고, 이 테스트 함수는 삭제 후 같은 파일에 대체 코드가 추가되지 않아 검증 대상이 사라진 것으로 보인다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 테스트 코드를 pytest 관용구로 재작성하는 리팩터링이며, 삭제된 코드는 테스트 함수라 호출되지 않아 제거됐다."}

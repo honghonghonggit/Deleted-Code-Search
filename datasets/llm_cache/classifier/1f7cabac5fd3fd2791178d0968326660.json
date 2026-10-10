@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 pandas/io/gbq.py를 제거하고 pandas-gbq로 대체한다고 밝히고, 추가된 코드가 pandas_gbq.to_gbq 호출로 이전 함수의 BigQuery 적재 기능을 외부 패키지에 위임한다."}

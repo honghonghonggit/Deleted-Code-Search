@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 제목이 PyNvVideoCodec 관련 코드를 gpu worker 밖으로 옮기는 작업이라 하고, 이 테스트가 검증하던 `_reserve_mm_ipc_gpu_memory`의 PyNvVideoCodec 예산 로직이 다른 위치로 이동했기 때문이다."}

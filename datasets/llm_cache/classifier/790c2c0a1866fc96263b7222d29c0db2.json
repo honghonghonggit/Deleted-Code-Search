@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"remove the legacy DoclingDocument\"로 레거시 DoclingDocument 기능 자체를 제거한다고 명시하며, 이 함수는 그 레거시 문서 내보내기 코드의 일부다."}

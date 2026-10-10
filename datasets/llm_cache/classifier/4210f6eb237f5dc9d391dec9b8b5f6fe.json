@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 V0 attention backend를 제거하고 제거된 V0 backend 요청 시 오류를 낸다고 명시하여, 해당 backend의 공개 기능 자체가 폐기됐다."}

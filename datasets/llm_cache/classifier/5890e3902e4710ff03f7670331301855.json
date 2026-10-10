@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|pydantic_core 전환으로 검증 로직이 _internal 모듈과 core schema 생성으로 옮겨가면서 이 파일의 개별 validator 함수가 더 이상 맞지 않게 됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Upgraded Layout Postprocessing\"과 \"Implement hierachical cluster layout processing\"이라 하여 레이아웃 후처리 구조가 계층적 클러스터 처리로 바뀌면서 이 병합 로직이 새 구조에 맞지 않게 됐다."}

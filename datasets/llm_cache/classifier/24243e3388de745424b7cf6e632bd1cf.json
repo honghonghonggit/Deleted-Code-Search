@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지와 PR 제목이 msgpack 기능 자체를 폐기(DEPR)한다고 밝히고 있어, 이 테스트가 검증하던 msgpack 기능이 제거됨에 따라 삭제된 것이다."}

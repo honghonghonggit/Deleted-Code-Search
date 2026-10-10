@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"flattening imports\"이고, 삭제된 개별 `_import_*` 함수 대신 `_module_lookup` 딕셔너리와 `importlib` 기반 지연 임포트 구조로 바뀌어 같은 임포트 기능이 다른 자리에서 계속된다."}

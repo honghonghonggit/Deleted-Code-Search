@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 py.test 전환을 말할 뿐 이 테스트를 이름으로 가리키지 않고, 삭제된 본문에도 @skip·@xfail 같은 이유가 없어 호출되지 않아 지운 것인지 판단할 근거가 없다."}

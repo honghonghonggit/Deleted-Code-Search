@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 벤더링된 의존성을 전부 제거하는 작업이라고 밝히고 있어, vendored urllib3의 공개 API 표면이 사라진 기능 제거로 판단된다."}

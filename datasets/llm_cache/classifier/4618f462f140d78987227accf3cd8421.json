@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 mixture.DPGMM을 0.20에서 제거 대상으로 명시했고, 이 클래스의 메서드인 _get_covars가 그 제거와 함께 삭제됐다."}

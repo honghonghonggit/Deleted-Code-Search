@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|테스트 파일에서 fake_run_process를 호출하던 테스트가 이 커밋에서 제거되어 검증할 대상이 없어졌고, 같은 자리에 대체 코드가 없다."}

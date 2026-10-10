@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 GGUF 지원을 vllm-gguf-plugin으로 이전(migrate)한다고 밝혀 사용자 기능 자체가 코어에서 제거됐다."}

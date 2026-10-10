@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"Replace the builder flow with direct factory orchestration\"이라며 빌더 흐름 자체를 팩토리 오케스트레이션으로 교체한다고 밝혀, 빌더의 컨텍스트 매니저 메서드인 __exit__이 그 구조 변경으로 맞지 않게 됐다."}

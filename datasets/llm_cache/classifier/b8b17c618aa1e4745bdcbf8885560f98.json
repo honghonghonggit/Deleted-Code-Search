@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에 \"Removed legacy daemon CLI (`browser_use/skill_cli/**/*`)\"라고 명시되어 이 파일 전체가 폐기된 레거시 CLI의 일부로 제거됐다."}

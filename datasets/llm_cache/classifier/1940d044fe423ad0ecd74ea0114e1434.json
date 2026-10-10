@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 MELCloud 통합을 per-device DataUpdateCoordinator 패턴으로 재구성하면서 MelCloudDevice 래퍼가 coordinator를 참조하도록 바뀌어, device_id 프로퍼티가 coordinator.device_info 경로로 대체됐다."}

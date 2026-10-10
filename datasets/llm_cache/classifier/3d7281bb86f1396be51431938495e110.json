@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 이 파일에 LegacyStandardPdfPipeline.__init__을 추가해 super().__init__(pipeline_options)로 위임하고, 삭제된 본문의 파이프라인 구성은 StandardPdfPipeline이 이어받는다."}

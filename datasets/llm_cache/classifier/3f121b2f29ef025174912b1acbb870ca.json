@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 리뷰에서 AutoOCR이 언어 정의를 허용하지 않기로 결정되어, lang_type 전달을 검증하던 이 테스트의 대상 기능이 사라졌고 같은 커밋이 _resolve_rapidocr 기반의 새 테스트들로 대체했다."}

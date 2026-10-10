@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문에 \"The old KV command integration tests are converted into functionally equivalent unit tests\"라고 명시되어, 명령(Command) 기반 테스트가 DAO 기반 단위 테스트로 재구성되면서 이 테스트가 다른 자리로 옮겨졌다."}

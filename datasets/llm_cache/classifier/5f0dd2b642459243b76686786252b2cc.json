@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 static_shapes를 항상 False로 강제하도록 동작을 바꿨다고 밝히고, 같은 커밋이 해당 설정을 검증하는 테스트를 새로 추가했으므로 기존 테스트 함수가 새 인터페이스에 맞지 않게 되어 삭제됐다."}

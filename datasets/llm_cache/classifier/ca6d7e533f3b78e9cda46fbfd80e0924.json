@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #1118이 \"Update command to run full stack application\"이라며 CLI 명령 체계를 create_app 등으로 재편했고, runserver 명령은 공개 CLI 표면에서 사라졌다."}

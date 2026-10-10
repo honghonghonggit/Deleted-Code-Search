@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 legacy `owners` API/config semantics를 제거하고 `editors`로 대체한다고 명시하며, 삭제된 코드는 \"Owners are invalid\" 예외로 owners 기반 검증 자체가 사라진 공개 표면 변경이다."}

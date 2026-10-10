@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 deprecation timeline에 따라 .load_settings()를 제거한다고 명시하고, 삭제된 코드의 @deprecated 데코레이터가 대안(celery.current_app.conf)을 가리키는 공개 API 폐기·지원 종료다."}

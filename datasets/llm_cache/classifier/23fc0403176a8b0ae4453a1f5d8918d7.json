@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"removing redundancy by gathering tests in classes and sharing setup functions\"라며 벤치마크를 클래스로 모으고 setup을 공유하는 재구성이라 밝혔고, 같은 자리에 offset/n_steps 파라미터를 받는 FrameConstructorDTIndexFromOffsets.setup이 들어와 같은 초기화 일을 이어받는다."}

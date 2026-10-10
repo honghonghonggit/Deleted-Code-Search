@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 validation 함수들의 **kwargs를 ValidatorInfo 객체로 교체한다고 밝히고, 같은 자리에 info.context를 쓰는 f(input_value, info)가 추가되어 인터페이스 변경에 따라 삭제됐다."}

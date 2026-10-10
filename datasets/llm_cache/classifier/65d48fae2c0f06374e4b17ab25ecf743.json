@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋이 단기·장기·엔티티·외부 메모리를 통합 메모리 API로 재편하면서 이벤트 기반 외부 메모리 테스트 헬퍼가 새 구조에 맞지 않게 됐다."}

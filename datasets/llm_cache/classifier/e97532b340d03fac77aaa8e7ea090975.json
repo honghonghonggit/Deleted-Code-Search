@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지는 pandas.tools를 pandas.core.reshape로 옮긴다고만 하고, test_pipe나 pipe 함수를 이름으로 가리키며 삭제 이유를 말하지 않으며, 이 파일에 추가·대체된 코드도 없다."}

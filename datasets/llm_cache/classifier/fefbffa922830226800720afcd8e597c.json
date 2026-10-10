@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 테스트는 xfail로 표시된 상속 오버라이드일 뿐이고, 같은 커밋이 xai를 스케줄 테스트에 추가하면서 모델 설정만 바꿨을 뿐 검증 대상이 사라졌다는 근거가 화면에 없다."}

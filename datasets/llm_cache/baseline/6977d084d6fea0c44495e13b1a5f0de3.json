@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지에 레거시 chromadb 유틸을 제거하고 SearchResult 로 마이그레이션한다고 적혀 있어 저장소 추상화 변경에 따른 제거로 판단된다."}

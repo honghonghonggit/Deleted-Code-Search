@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 deprecation timeline에 따라 .load_settings()를 제거한다고 밝히고, 삭제된 본문도 deprecated(removal=4.0) 표시로 공개 API 폐기를 보여준다."}

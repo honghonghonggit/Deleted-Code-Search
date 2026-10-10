@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 events 모듈을 crewai.utilities.events에서 crewai.events로 재배치하고 이전 경로에 deprecation 스텁을 남긴다고 밝혀, 리스너가 새 위치로 옮겨졌음을 보여준다."}

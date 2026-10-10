@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"removing redundancy by gathering tests in classes and sharing setup functions\"라 밝히고, 삭제된 `time_index_datetime_difference_disjoint`의 `self.idx1.difference(self.idx3)`가 추가된 `SetOperations` 클래스의 `time_datetime_difference_disjoint`에서 `self.dtidx1.difference(self.dtidx3)`로 같은 일을 이어받는다."}

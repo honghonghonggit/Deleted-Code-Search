@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 Int64Index·UInt64Index·Float64Index를 테스트에서 제거하는 DEPR 작업(#42717)이며, 이 테스트가 검증하던 index_cls 기반 공개 클래스 자체가 폐기됐다."}

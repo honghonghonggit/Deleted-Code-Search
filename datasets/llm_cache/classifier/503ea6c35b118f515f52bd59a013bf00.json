@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `test_types.py`를 여러 파일로 분할하고 `BaseModel` 대신 `TypeAdapter`로 이관한다고 밝혀, 이 테스트가 다른 파일·다른 방식으로 옮겨졌음을 보여준다."}

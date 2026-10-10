@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 \"Clearing existing files\"로 파일 전체를 비우는 정리이며, 이 테스트가 검증하던 대상이 같은 커밋에서 제거됐다는 화면 증거가 없어 호출자·대상 상실로 인한 삭제로 볼 근거가 부족하다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 레거시 분리 훅(get_num_mm_encoder_tokens/get_num_mm_connector_tokens)을 get_mm_lora_token_counts()로 통합·마이그레이션한다고 밝혔고, 같은 파일에 추가된 get_mm_lora_token_counts가 num_mm_embeds 기반으로 동일한 토큰 계산을 이어받는다."}

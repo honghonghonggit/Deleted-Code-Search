@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋이 메모리 시스템을 통합 API로 전면 교체하면서 이 테스트가 검증하던 ExternalMemory.reset 대상이 사라졌고, 같은 자리에 대체 테스트나 코드가 추가되지 않았다."}

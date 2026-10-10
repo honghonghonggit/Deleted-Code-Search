@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 doctest 기반 위젯 테스트를 정식 unittest로 재작성하는 작업이라 했고, 삭제된 __init__은 그 재작성으로 검증 대상이던 옛 테스트 구조가 사라진 것뿐 호출자를 잃은 내부 함수다."}

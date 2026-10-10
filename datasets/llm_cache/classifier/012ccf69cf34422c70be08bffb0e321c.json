@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"grouping benchmarks with the same setup in common classes, removing a lot of the setup functions in this way\"라고 밝혀, setup 함수를 공통 클래스로 옮기며 구조를 재편한 것이다."}

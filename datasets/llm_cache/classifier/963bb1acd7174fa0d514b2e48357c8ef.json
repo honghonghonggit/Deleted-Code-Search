@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 \"delete packages\"이고 PR이 vendored dependency 제거를 목표로 하며, 이 파일은 vendored urllib3의 contrib 모듈이라 호출자를 잃고 통째로 삭제된 잔재다."}

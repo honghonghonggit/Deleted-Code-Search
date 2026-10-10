@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 같은 자리에 `@pytest.mark.parametrize`로 `test_boston(name, criterion)`을 추가해 동일한 `check_boston_criterion` 호출을 이어받았으므로, 테스트 구조를 pytest parametrize 방식으로 재편하면서 기존 yield 방식 테스트가 맞지 않게 됐다."}

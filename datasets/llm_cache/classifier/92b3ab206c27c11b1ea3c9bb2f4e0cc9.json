@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Refactor CLI to use Click instead of our custom argparse based framework\"라고 밝히고 있고, 같은 파일에 click 기반 CLIContext 등 새 CLI 구조가 추가되어 argparse용 옵션 누적 헬퍼인 이 함수가 새 구조에서 맞지 않게 됐다."}

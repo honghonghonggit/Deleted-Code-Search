@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|테스트 서버를 스레드로 옮기면서(#292) 이벤트 루프 executor로 동기 함수를 감싸던 래퍼가 더 이상 맞지 않게 되어 제거됐다."}

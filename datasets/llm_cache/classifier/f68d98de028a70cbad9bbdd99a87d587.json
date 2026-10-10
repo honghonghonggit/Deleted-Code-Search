@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 Model._meta API를 공식화하는 작업이라 밝히고 있고, 삭제된 테스트는 옛 get_field_by_name API의 동작을 검증하던 것이라 API 재구성으로 더 이상 맞지 않게 됐다."}

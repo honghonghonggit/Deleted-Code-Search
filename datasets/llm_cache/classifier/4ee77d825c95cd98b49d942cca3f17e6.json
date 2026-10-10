@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"DEPR: remove ix\"로 사용자 기능인 .ix 인덱서 자체를 제거했고, 이 테스트는 그 .ix의 FutureWarning 동작을 검증하던 것이라 대상 기능 제거와 함께 사라졌다."}

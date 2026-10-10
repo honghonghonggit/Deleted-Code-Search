@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 serve.py 단일 파일을 책임별 여러 모듈로 나누는 리팩터라 밝히고, 미들웨어가 사라진 자리에 serving 모듈 import가 들어와 같은 일이 다른 자리에서 계속된다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문에서 docling_parse_v4_backend.py가 docling_parse_backend.py로 이름이 바뀌고 클래스가 DoclingParseDocumentBackend로 통합되었으며, 이 파일은 새 백엔드로 라우팅하는 스텁 클래스만 남았으므로 _ensure_parsed의 기능은 새 백엔드로 이전됐다."}

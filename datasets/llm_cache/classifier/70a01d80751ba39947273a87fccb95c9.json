@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문은 Cython 제거와 pyproject.toml 전환만 말할 뿐, setup.py의 replace_users 함수를 이름으로 가리키며 삭제 이유를 설명하지 않고, 삭제된 본문이나 추가된 코드에서도 이 함수의 일을 이어받는 근거를 찾을 수 없다."}

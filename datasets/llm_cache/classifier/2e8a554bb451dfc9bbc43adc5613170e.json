@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 `flick_electric` 통합 자체를 제거한다고 명시하고, API 엔드포인트가 NXDOMAIN을 반환해 기능이 더 이상 동작하지 않는다고 밝히므로 사용자 기능 폐기다."}

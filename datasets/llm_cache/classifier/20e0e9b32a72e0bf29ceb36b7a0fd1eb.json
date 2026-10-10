@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문에서 \"We tore out playwright entirely in favor of using raw CDP with shallow python bindings via cdp-use\"라며 Playwright를 cdp-use로 교체했다고 밝혔고, 삭제된 함수는 playwright 클라이언트 종료를 담당했으므로 외부 라이브러리 전환으로 제거됐다."}

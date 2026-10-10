@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 test_frame.py를 pandas/tests/frame으로 재구성하는 작업이라 하고, 삭제된 테스트 함수는 이 파일에서 호출자를 잃고 다른 위치로 옮겨진 것으로 보인다."}

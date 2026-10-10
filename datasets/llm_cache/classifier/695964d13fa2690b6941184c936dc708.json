@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 Series·Categorical·Index에서 .reshape 메서드를 제거한다고 밝히고, 삭제된 본문도 0.19.0에서 deprecated되어 오류를 내는 공개 메서드임을 보여준다."}

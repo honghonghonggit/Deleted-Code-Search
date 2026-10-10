@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"move the fixtures to their test directory\"라며 픽스처 경로 규칙을 바꿨고, 추가된 코드가 `get_fixture_path` 호출로 경로 계산을 대체하므로 구조 변경으로 이 함수가 맞지 않게 됐다."}

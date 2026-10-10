@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 \"Setting state directly in alarm_control_panel was previously deprecated and will now not work\"라며 deprecated된 직접 상태 설정 기능을 제거하는 breaking change라고 명시했다."}

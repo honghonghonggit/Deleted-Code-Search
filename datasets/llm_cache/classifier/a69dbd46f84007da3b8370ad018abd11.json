@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목과 본문이 TensorFlow 지원을 라이브러리 전반에서 완전히 제거한다고 명시하고, 이 함수는 TF 전용 모델 파일의 TF 구현이므로 사용자 기능 자체가 폐기됐다."}

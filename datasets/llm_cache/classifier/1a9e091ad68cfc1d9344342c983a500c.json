@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #2573이 Playwright를 제거하고 cdp-use 기반으로 BrowserSession을 전면 재작성하면서 탭 포커스 전환 책임이 재구성되어 이 메서드가 맞지 않게 됐다."}

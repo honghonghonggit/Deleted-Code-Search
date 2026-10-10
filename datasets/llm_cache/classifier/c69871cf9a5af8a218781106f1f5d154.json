@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목·본문이 \"Update commands to run full stack app\"이라 CLI 명령 자체를 개편한 것으로, runserver 명령이 공개 CLI 표면에서 사라졌다."}

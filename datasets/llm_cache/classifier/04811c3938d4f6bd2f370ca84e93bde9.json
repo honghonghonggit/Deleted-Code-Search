@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"Remove the GGUF shard controls introduced by #6107\"이라며 export toggles·split-folder naming·API/MCP fields 등 사용자 기능 자체를 제거한다고 명시했고, 이 테스트의 upload_folder 스텁도 그 shard 업로드 기능 검증용이다."}

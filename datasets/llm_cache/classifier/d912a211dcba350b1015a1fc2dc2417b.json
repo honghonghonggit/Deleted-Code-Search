@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 \"The now-unused `_host_is_same` helper (dead code that performed blocking DNS resolution)\"라고 명시하여 호출자를 잃은 내부 함수임을 밝히고 있다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 pandas.tools -> pandas.core.reshape 이동/재구성(CLN)만 말하고, 이 테스트가 검증하던 pipe 관련 코드가 이 파일에서 사라졌음을 보여줄 뿐 호출되지 않아 지웠다는 근거는 화면에 없다."}

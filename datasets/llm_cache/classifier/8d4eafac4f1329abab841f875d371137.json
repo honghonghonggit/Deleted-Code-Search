@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|삭제된 `is_disconnected` 스텁은 같은 자리에 동일한 본문으로 다시 들어왔을 뿐이고, 커밋 메시지·PR 본문은 테스트 헬퍼 공유·중복 제거만 말할 뿐 이 함수의 삭제 이유를 가리키지 않는다."}

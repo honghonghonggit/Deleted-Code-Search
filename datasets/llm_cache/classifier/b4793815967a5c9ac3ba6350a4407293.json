@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #901 본문이 \"concurrency backends are not needed anymore as the core networking stuff is done with HTTPCore now\"라며 백엔드 자체를 제거한다고 밝히고, 이 함수는 그 백엔드의 공개 동작을 구현한 메서드다."}

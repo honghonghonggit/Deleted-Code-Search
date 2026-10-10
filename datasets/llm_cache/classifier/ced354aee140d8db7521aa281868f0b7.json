@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문은 벤치마크 분할·param 활용·시드 추가만 언급할 뿐 time_mean_numpy 삭제 이유를 이름으로 가리키지 않고, 추가된 코드에도 이 함수의 resample('1s', how=np.mean) 작업을 이어받는 줄이 없다."}

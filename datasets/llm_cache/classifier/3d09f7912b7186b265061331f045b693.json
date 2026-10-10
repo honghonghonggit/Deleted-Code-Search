@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 langchain-community를 별도 저장소로 이전한다고 밝히고 있어, 테스트 대상인 WriteFile 도구가 이 저장소에서 사라지면서 검증할 대상이 없어져 테스트 함수가 삭제됐다."}

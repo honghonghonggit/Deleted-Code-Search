@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 page.parsed_page 를 텍스트 셀의 유일한 소스로 삼는 구조 변경을 명시하고 있어, 해당 추상화 변경으로 제거된 것으로 판단된다."}

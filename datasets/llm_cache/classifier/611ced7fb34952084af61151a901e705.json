@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 Punica 인터페이스를 세 종류로 재편하는 정리 작업이라 밝히고, 추가된 코드에서 reset_lora의 스택 초기화 로직이 BaseLinearLayerWithLoRA의 __init__ 내 루프로 옮겨졌다."}

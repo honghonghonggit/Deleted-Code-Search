@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|삭제된 fake_run_process는 테스트 내 monkeypatch용 스텁으로, 같은 커밋이 추가한 코드 어디에서도 이 함수를 참조하거나 대체하는 호출 경로가 보이지 않아 호출자를 잃은 것으로 판단된다."}

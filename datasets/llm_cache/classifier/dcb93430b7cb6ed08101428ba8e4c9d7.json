@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 모든 vendored dependency를 제거한다고 밝혔고, chardet 패키지 전체가 삭제되어 외부 라이브러리 호출로 대체된 것으로 판단된다."}

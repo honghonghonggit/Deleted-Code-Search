@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 Punica 인터페이스를 세 종류로 재정리하는 작업이라 밝히고 있고, 추가된 코드에서 reset_lora의 본문(스택 0 초기화)이 BaseLinearLayerWithLoRA의 다른 자리로 옮겨졌기 때문이다."}

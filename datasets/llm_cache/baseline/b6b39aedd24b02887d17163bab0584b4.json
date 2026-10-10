@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 스레드 기반 docling-parse 백엔드를 기본으로 도입하는 구조 변경을 설명하므로, 기존 파이프라인 초기화가 새 백엔드 구조로 대체된 것으로 판단된다."}

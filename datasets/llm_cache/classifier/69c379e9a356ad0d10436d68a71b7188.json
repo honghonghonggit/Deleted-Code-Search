@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|`fake_load_events`는 테스트 내부의 가짜 헬퍼로, 같은 커밋이 추가한 코드에서 이 함수를 호출하거나 대체하는 자리가 보이지 않아 호출자를 잃고 삭제된 것으로 판단된다."}

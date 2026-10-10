@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지가 이 테스트를 이름으로 가리키지 않고, \"These tests were moved to test_migration_from_schema_32.py in `dev` and have changed\"라고만 말하며, 삭제된 본문 자체도 이유를 드러내지 않는다."}

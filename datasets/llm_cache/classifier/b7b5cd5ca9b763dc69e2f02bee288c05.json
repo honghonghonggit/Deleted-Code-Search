@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #2573이 Playwright를 cdp-use로 전면 교체하는 대규모 재작성이라 탭 포커스 전환 책임이 새 CDP 기반 구조의 다른 자리로 옮겨가면서 이 메서드가 맞지 않게 됐다."}

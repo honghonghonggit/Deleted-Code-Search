@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 JSON crew/flow 판별을 `[tool.crewai].definition` 메타데이터 기반으로 중앙화한다고 밝히고, 같은 파일에 `configured_project_definition`을 쓰는 `_configured_json_crew_path`가 추가되어 프로젝트 정의 판별 책임이 공유 헬퍼로 옮겨졌다."}

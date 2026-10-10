@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 `explore_json` 라우트와 그 CSV/XLSX/query/results/samples 헬퍼를 제거한다고 명시했고, 이 함수는 그 legacy viz 파이프라인의 일부로 기능 자체가 폐기됨."}

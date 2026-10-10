@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지와 PR 본문이 디스패처 인터페이스를 httpcore 인터페이스로 전환하는 작업임을 밝히고 있어, is_closed 프로퍼티가 새 인터페이스 구조에 맞지 않게 되어 제거된 것으로 판단된다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Revert 'Studio: minimal OS sandbox for Python and Terminal tools on Linux and macOS'\"로, 샌드박스 기능 자체를 되돌려 제거한 것이므로 이 함수가 제공하던 읽기 경로 허용 기능이 없어진 것이다."}

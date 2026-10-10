@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"minimal OS sandbox\" 기능을 되돌린 revert이므로, 이 테스트가 검증하던 샌드박스 기능 자체가 제거됐다."}

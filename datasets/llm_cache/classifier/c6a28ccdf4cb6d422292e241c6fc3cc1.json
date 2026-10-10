@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 flow_serializer.py 삭제를 명시하고, 이 테스트 함수는 삭제된 serializer 코드를 검증하던 대상이 없어져 함께 제거됐다."}

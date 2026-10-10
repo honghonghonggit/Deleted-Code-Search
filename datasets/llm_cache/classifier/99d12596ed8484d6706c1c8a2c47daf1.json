@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored 의존성을 제거하고 외부 라이브러리로 대체하는 작업이라고 밝히고 있어, urllib3 내부 구현이던 이 함수가 외부 urllib3 호출로 이어받아진 것으로 판단된다."}

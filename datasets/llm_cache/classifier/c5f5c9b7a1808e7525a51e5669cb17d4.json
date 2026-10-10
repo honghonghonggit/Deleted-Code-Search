@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 get(self, k, block=False, encoding=None) 시그니처가 추가되어 기존 get을 대체하므로, putBool/getBool 래퍼 도입에 맞춰 인터페이스가 바뀐 것이다."}

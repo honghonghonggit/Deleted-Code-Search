@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|테스트 함수 test_kernel은 static_shapes 관련 검증 대상이 이 커밋에서 경고·강제 False 검증으로 바뀌면서 호출자를 잃었고, 같은 본문이 다른 이름·위치로 이동한 흔적도 없다."}

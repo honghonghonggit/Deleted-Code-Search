@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Refactor CLI to use Click instead of our custom argparse based framework\"라고 CLI 프레임워크 전환을 명시했고, 삭제된 add_append_opt는 기존 argparse 기반 옵션 누적 헬퍼로 Click 기반 새 코드가 그 역할을 대체한다."}

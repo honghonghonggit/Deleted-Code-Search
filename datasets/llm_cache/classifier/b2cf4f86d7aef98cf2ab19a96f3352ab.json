@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 \"removing all vendored dependencies from Requests\"라고 밝혀, 직접 구현한 유니코드 데이터를 외부/표준 라이브러리로 대체한 제거다."}

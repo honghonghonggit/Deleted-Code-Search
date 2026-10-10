@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 `create_custom_forward`를 제거하고 `__call__`로 대체한다고 밝히며, 추가된 코드에서 `gradient_checkpointing_func(encoder_layer.__call__, ...)`로 호출 경로가 바뀌어 같은 일이 다른 인터페이스로 계속된다."}

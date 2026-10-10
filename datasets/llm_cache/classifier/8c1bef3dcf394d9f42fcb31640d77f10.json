@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|setUp()의 RequestFactory 인스턴스 생성이 클래스 속성 factory = RequestFactory()로 옮겨져 같은 일을 다른 자리에서 계속한다."}

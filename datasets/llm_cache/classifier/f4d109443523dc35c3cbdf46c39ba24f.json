@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 ChangeList의 결정적 정렬 로직을 QuerySet.totally_ordered로 추출·공개한다고 밝혔고, 리뷰에서 새 위치에 테스트 케이스가 재현되지 않았다고 지적해 같은 검증이 다른 자리로 옮겨졌음을 보여준다."}

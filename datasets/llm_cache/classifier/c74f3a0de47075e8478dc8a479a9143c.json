@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|Python 3.5 미만 지원 제거로 이 파일(sklearn/externals/funcsigs.py)이 더 이상 필요 없어져 삭제된 것으로, 삭제된 __hash__는 호출자를 잃은 내부 함수다."}

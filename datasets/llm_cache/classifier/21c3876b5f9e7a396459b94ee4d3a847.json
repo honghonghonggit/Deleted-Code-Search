@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 CrawlerManager를 crawler_pool 기반으로 교체한다고 밝히고, 추가 코드가 crawler_pool의 get_crawler/close_all/janitor로 관리자 역할을 이어받아 같은 일이 다른 자리에서 계속된다."}

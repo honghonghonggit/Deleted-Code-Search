@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 `__modify_schema__`가 인스턴스 메서드로 다시 나타나 같은 일(스키마 format 지정)을 계속하므로, pydantic_core 전환에 따른 구조 변경으로 자리가 바뀐 것이다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Adapters\"이고 PR 제목이 \"Adapter refactoring\"이라 어댑터 구조 변경으로 request가 다른 자리(어댑터 계층)로 옮겨간 것으로 보이며, 같은 파일에는 is_redirect 프로퍼티만 추가돼 대체 코드가 없다."}

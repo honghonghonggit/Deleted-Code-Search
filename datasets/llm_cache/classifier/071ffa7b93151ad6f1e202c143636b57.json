@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 테스트 파일에서 must_not_run을 호출하던 코드가 같은 커밋에서 제거되었고, 커밋은 #8157을 되돌리는 revert이므로 검증 대상이 사라져 삭제됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|PR 본문이 `training=True` 하드코딩이 functional 구성 시 우선해야 하는데 ad-hoc 전파가 이를 깨뜨렸다고 설명하고, 리뷰도 `operation_fn` 제거로 `training` 전파가 조용히 실패한다고 지적하므로 잘못된 동작을 고치려는 삭제다."}

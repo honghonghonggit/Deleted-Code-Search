@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지 \"delete packages\"와 PR 본문 \"removing all vendored dependencies\"는 벤더링된 의존성 제거라는 사실만 말할 뿐, 이 __init__ 함수가 왜 지워졌는지(라이브러리 교체인지, 호출자 상실인지 등)를 이름으로 가리키며 설명하지 않는다."}

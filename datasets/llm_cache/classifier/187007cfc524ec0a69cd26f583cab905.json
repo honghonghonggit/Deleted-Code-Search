@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|SlackNotification이 SlackMixin을 상속하도록 바뀌면서 _get_body가 SlackMixin 쪽으로 옮겨졌고, 이 클래스는 Superset 6.0.0에서 제거 예정인 deprecated 클래스가 됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 pluggable_backend의 불완전한 revert를 고치는 작업이라 밝히고 있어, 이 함수는 그 되돌림 과정에서 구조가 원복되며 제거된 코드다."}

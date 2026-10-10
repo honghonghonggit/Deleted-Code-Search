@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목과 본문이 TensorFlow/JAX 지원을 라이브러리 전반에서 완전히 제거한다고 명시하며, 이 함수는 TF 전용 XLM 모델 클래스의 __init__이므로 사용자 기능 자체가 폐기됐다."}

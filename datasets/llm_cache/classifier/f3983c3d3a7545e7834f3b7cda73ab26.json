@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 \"concurrency backends are not needed anymore as the core networking stuff is done with HTTPCore now\"라며 디렉터리 전체가 테스트되지 않는다고 밝혀, 호출자를 잃은 내부 백엔드 코드를 제거한 것이다."}

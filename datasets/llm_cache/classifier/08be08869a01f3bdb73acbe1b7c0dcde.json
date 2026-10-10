@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 \"Implement youtubeaio\"라며 동기 코드를 외부 라이브러리로 옮긴다고 밝혔고, 추가된 코드가 youtubeaio의 channel.upload_playlist_id로 업로드 플레이리스트 ID를 대체하고 있다."}

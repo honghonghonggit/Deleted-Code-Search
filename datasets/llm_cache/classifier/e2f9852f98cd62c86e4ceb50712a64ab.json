@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문은 CSVImportCommand·ExcelImportCommand를 UploadCommand로 리팩터링했다고만 하고, 이 테스트가 검증하던 ExcelImportCommand 클래스가 사라져 검증 대상이 없어진 것으로 보인다."}

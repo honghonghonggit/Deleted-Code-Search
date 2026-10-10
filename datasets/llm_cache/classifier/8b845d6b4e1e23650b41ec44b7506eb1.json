@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 TensorFlow 지원을 라이브러리 전반에서 완전히 제거한다고 명시하고, 이 함수는 TF 전용 build 메서드로 대체 코드 없이 삭제됐다."}

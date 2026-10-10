@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문은 클래스 정의·참조 순서와 의존성 그래프 수정을 말할 뿐 _get_clones를 가리키지 않고, 추가된 코드에도 이 함수를 대체하거나 호출하는 자리가 없어 호출자를 잃은 것으로 보인다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|테스트 파일에서 fake_load_events를 호출하던 검증 대상이 이 커밋에서 제거되어 호출자를 잃었고, 같은 자리에 대체 코드가 없다."}

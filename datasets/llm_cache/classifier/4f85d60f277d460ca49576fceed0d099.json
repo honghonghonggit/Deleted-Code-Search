@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 wemo 엔티티들의 중복 보일러플레이트를 공통 코드로 병합하는 리팩터라, device_info가 WemoEntity 기반 클래스로 옮겨졌고 이 파일은 WemoEntity/WemoSubscriptionEntity를 상속하도록 바뀌었다."}

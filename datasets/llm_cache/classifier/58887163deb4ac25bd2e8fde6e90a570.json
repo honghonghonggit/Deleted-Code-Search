@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|pydantic_core 기반으로 내부 로직을 `_internal` 모듈로 재구성하고 타입 제약을 애노테이션으로 전환하는 대규모 구조 변경의 일부로 제거됨."}

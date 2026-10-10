@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 릴리스 자동화를 Logfire 방식으로 미러링한다고만 하고, get_last_tag를 이름으로 가리키는 이유 문장이 없으며 이 파일에 대체 코드나 호출자 변경이 없어 호출되지 않아 지운 것으로 보인다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지는 py.test로 전환한다는 내용뿐이고, 삭제된 테스트 함수가 제거된 이유를 직접 드러내지 않는다."}

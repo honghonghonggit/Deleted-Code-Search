@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|tearDown에서 개별적으로 settings.py를 지우던 책임이 setUp의 tempfile.TemporaryDirectory()와 addCleanup(tmpdir.cleanup)으로 옮겨가 임시 디렉터리 전체가 정리되므로, 같은 정리 작업이 다른 자리에서 계속된다."}

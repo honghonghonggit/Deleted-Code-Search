@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지 'delete packages'와 PR 본문의 vendored dependencies 제거 작업으로 파일 전체가 삭제되어, 호출자를 잃은 내부 함수가 함께 사라졌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 Trainer의 공통 테스트를 여러 파일로 분할하는 리팩터링이라 테스트 재구성 과정에서 제거됨"}

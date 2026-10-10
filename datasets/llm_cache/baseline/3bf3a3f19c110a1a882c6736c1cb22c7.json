@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|start_worker() 기반 통합 테스트를 pytest-celery 스모크 테스트로 이전하면서 공유 태스크가 t/smoke/tasks.py로 재구성됨"}

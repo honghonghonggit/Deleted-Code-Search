@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 **kwargs를 ValidatorInfo 객체로 교체한다고 명시하고, 대체 코드가 info.context로 접근하도록 시그니처·추상화를 변경했다."}

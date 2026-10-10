@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored 의존성을 제거한다고 밝혔고, 이 파일은 requests/packages/chardet 아래 벤더링된 chardet 코드라 외부 라이브러리로 대체된 것이다."}

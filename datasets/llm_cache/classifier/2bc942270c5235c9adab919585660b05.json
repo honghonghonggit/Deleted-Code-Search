@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 DateOffset의 산술 메서드를 tslibs.offsets.BaseOffset으로 옮긴다고 밝혔고, 이 커밋에서 DateOffset이 BaseOffset을 상속하도록 바뀌어 __neg__의 구현이 상위 클래스로 이동했다."}

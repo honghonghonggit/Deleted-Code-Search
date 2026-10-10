@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|start_worker()를 사용하던 통합 테스트들이 스모크 테스트로 이전되면서 해당 테스트에서만 쓰이던 태스크가 제거됨"}

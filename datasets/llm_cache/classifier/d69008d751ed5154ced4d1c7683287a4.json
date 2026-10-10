@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지 \"REF: share EABackedBlock.fillna\"와 같이, EABackedBlock.fillna의 로직을 공유하기 위해 기존 fillna가 try/except 기반의 새 구현으로 대체되었고, 같은 일은 다른 자리(공유 구현)에서 계속된다."}

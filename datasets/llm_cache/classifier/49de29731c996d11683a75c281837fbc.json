@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #5353 본문이 #4976(UTF-8 BOM 응답 수정)을 포함한 미완성 PR들을 되돌린다고 명시했고, 이 테스트는 그 되돌림으로 BOM 지원 기능 자체가 제거된 것이다."}

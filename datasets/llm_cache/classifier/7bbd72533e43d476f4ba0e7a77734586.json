@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 plugin의 list_plugins·get_plugin_info 도구를 저가치로 판단해 plugin 모듈 디렉터리 전체(schemas 포함)를 삭제했고, \"Removes existing feature or API\"에 체크했으므로 사용자 기능 제거다."}

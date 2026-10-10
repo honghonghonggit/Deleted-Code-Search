@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 in-repo evaluation/ 디렉터리를 폐기하고 외부 memory-benchmarks 저장소로 대체한다고 명시하며, 이 함수가 속한 LangMem 베이스라인 코드가 그 폐기 대상에 포함된다고 밝히고 있다."}

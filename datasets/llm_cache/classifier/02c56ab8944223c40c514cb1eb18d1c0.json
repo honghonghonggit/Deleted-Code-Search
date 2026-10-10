@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|PR #2026 본문이 `__del__`에서의 암묵적 close/warning이 신뢰할 수 없어 `atexit` 시점에 stdlib 접근 실패로 `AttributeError: 'NoneType' object has no attribute 'OPENED'`(issue #2024) 같은 예외가 발생한다고 밝히며 제거했다."}

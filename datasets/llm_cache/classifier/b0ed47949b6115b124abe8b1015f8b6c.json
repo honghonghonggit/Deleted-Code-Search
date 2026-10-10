@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"Drops redirect and auth from being middleware, and just handles them on the Client instance\"라며 auth를 미들웨어에서 Client로 옮겼다고 밝히므로, 같은 일이 다른 자리에서 계속된다."}

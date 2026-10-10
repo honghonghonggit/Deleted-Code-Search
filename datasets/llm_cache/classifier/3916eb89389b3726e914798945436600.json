@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|PR 본문은 이 파일에 대해 \"typing/import cleanups and schema handling\"이라고만 언급할 뿐 _extract_env_vars 삭제의 이유를 이름으로 밝히지 않고, 같은 커밋에 대체 코드나 추가된 코드가 없어 화면만으로는 근거를 댈 수 없다."}

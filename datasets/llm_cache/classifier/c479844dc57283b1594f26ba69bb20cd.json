@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 동일한 `__modify_schema__` 본문이 `if TYPE_CHECKING` 블록 안으로 재배치되어, mypy 타입 지원을 위한 구조 변경 과정에서 코드가 다른 위치로 옮겨졌을 뿐 로직은 그대로 유지됨."}

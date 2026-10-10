@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 Antifurto365의 요청으로 iAlarm XR 통합을 제거하는 breaking change라 명시했고, 이 테스트는 제거된 통합의 설정 기능을 검증하던 테스트다."}

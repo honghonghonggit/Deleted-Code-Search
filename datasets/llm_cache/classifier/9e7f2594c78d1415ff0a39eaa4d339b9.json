@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 embedchain을 별도 아카이브 저장소로 추출하며 \"This PR completes the deprecation by extracting the code itself\"라고 명시해 레거시 프레임워크 기능 자체를 폐기·이관했기 때문이다."}

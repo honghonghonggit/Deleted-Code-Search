@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|PR 본문이 `Request.cookies`를 설정해도 아무 효과가 없는 비기능적 속성이라며 사용자가 기대할 동작을 하지 않는 버그로 취급해 제거했다고 밝힌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #49682가 Int64Index·UInt64Index·Float64Index를 테스트에서 제거하는 DEPR 작업이고, 이 테스트가 검증하던 index_cls 기반 32bit 생성자 동작 자체가 폐기 대상 클래스에 속한다."}

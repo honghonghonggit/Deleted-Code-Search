@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #2573이 BrowserSession을 LocalBrowserConnection/RemoteBrowserConnection으로 분리하는 대규모 재구조화이며, 삭제된 PDF 자동 다운로드 로직은 이 커밋이 추가한 새 연결 모델 코드 어디에도 이어받지 않고 같은 자리에 대체 코드도 없어 구조 변경으로 맞지 않게 된 코드로 판단된다."}

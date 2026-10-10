@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 deprecated losses를 정리한다고 명시하여 폐기된 손실 함수 지원을 제거한 것이므로 기능 자체를 없앤 FEAT에 해당한다."}

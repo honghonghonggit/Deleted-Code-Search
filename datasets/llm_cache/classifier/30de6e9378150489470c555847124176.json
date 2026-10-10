@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 test_trainer.py의 테스트를 여러 파일로 분할하는 리팩터라 하고, 이 테스트가 검증하던 get_learning_rates 관련 코드가 같은 커밋에서 사라져 검증 대상이 없어졌다."}

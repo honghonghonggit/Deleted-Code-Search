@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #804가 디스패처 인터페이스를 httpcore 인터페이스로 전환하는 작업이라 이 파일의 디스패처 구조·책임이 바뀌면서 is_closed가 맞지 않게 됐다."}

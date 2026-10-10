@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|삭제된 test_jsonb_agg_empty_result의 검증 내용이 같은 커밋에서 추가된 test_empty_result_set의 JSONBAgg 케이스로 흡수되어, 테스트 구조가 subTest 기반으로 재편되면서 같은 일이 다른 자리에서 계속된다."}

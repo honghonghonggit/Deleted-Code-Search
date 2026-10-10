@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|putBool/getBool 래퍼 API 도입에 맞춰 파라미터 접근 인터페이스가 재구성되어 제거됐다."}

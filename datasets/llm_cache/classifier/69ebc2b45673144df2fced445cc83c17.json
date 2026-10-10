@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 들어온 대체 코드가 `TemplateEnvironment.__init__`으로, `self._hass` 대신 `self.hass`를 쓰고 필터·글로벌 등록을 담당하도록 책임이 재구성됐다."}

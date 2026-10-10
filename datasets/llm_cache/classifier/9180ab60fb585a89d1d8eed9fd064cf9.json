@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지는 테스트를 unittest로 재작성한다는 사실만 말할 뿐 이 __init__ 삭제의 이유를 밝히지 않고, 추가된 코드에도 이를 이어받는 대체 코드가 없다."}

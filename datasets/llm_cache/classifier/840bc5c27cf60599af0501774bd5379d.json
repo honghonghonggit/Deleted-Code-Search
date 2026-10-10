@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 read_xml_iterparse를 temp_path를 받아 write_text로 쓰는 형태로 다시 추가해, tmp_path로 파일을 만들던 책임이 pytest temp_path 픽스처 기반으로 옮겨졌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 worker 측 집계를 제거하고 MultiprocExecutor가 모든 worker의 ModelRunnerOutput을 받아 finished_sending/finished_recving을 집계하도록 바꿨다고 밝히며, 같은 커밋이 이 파일에 maybe_setup_kv_connector 호출을 다른 위치에 추가해 같은 일이 다른 자리에서 계속된다."}

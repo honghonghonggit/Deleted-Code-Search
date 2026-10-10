@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR이 Requests에서 모든 vendored 의존성을 제거하는 작업이라고 명시하므로, 직접 구현한 코드를 외부/표준 라이브러리로 대체한 것이다."}

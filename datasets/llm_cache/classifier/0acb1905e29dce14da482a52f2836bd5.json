@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 CLI를 커스텀 argparse 기반 프레임워크에서 Click으로 재작성했다고 밝혀, cmd.out을 검증하던 이 테스트가 새 CLI 구조에 맞지 않게 됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Dropped support for MySQL < 8.4\"로 사용자 지원 범위 자체를 없앴고, 삭제된 함수는 MySQL 8.0.13+ 조건부 기능 지원을 판정하던 공개 백엔드 기능 플래그다."}

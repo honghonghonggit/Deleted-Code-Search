@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 RapidOcrModel의 언어/백엔드 해석 방식을 resolver 기반으로 재작성한다고 밝히고, 같은 파일에 _resolve_rapidocr·_parse_rapidocr_model_spec 기반의 새 테스트들이 추가되어 lang_type 전달 검증이 해석 로직 검증으로 대체됐다."}

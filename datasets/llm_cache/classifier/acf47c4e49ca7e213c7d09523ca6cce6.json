@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지·PR 본문이 pydantic-core를 pydantic 저장소로 가져오는(import) 재구성만 말할 뿐, 이 테스트 함수나 그 대상(validate_core_schema)의 삭제 이유를 이름으로 가리키지 않는다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|리뷰 코멘트에서 이 테스트가 `**kwargs`와 `each_item`을 뒤섞어 검증한다며 각각을 개별 테스트로 분리하겠다고 밝혔고, 같은 커밋이 `@field_validator` 기반 테스트들로 대체하고 있다."}

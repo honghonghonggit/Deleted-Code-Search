@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`pydantic-core`를 `pydantic` 저장소로 통합(import)하면서 저장소 구조·모듈 경계가 재편되어 해당 테스트가 제거됨."}

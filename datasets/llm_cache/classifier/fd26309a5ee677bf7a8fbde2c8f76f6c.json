@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|pylint의 useless-super-delegation 검사 수정 목록에 이 함수가 해당되며, 부모 __init__을 그대로 호출만 하는 중복 정의라 제거됐다."}

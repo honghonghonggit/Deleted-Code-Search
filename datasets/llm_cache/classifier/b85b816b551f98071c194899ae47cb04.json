@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 타입 어노테이션만 추가된 동일한 `__init__`이 다시 들어와 있어, mypy 오류 해결을 위한 타입 구조 변경으로 기존 시그니처가 대체된 것이다."}

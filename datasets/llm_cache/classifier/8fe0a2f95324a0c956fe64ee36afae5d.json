@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 모든 vendored 의존성을 제거한다고 밝혔고, 이 파일은 requests/packages/urllib3/packages/ordered_dict.py의 vendored 구현이라 표준 라이브러리(collections.OrderedDict)로 대체된 것이다."}

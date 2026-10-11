@@ -49,7 +49,7 @@ from classify.baselines import (
     write_predictions,
 )
 from classify.labels import REASON_LABELS, read_jsonl
-from pipeline.select_repos import load_env_file, resolve_cache_dir
+from pipeline.select_repos import load_env_file
 
 # 프롬프트를 고치면 올린다. 캐시 키와 예측 파일에 함께 들어가므로 어느 프롬프트로 낸 답인지 남는다.
 PROMPT_VERSION = "b1"
@@ -82,6 +82,10 @@ NVIDIA_TIMEOUT_SECONDS = 120
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_API_VERSION = "2023-06-01"
 MAX_ANSWER_TOKENS = 256
+# 응답 캐시는 저장소에 커밋한다 (2026-09-24 팀 합의, `docs/evaluation.md` "LLM 모델 고정"). 무료
+# 카탈로그에서 모델이 빠져도 같은 답으로 다시 채점할 수 있어야 한다. 그래서 `data/`(커밋하지 않음)
+# 가 아니라 `datasets/` 아래가 기본이다. 파일에는 모델 이름과 답만 있고 키는 없다.
+DEFAULT_CACHE_DIR = Path("datasets") / "llm_cache" / "baseline"
 MAX_DIFF_CHARS = 4000
 MAX_MESSAGE_CHARS = 2000
 
@@ -436,7 +440,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     if caller is None:
         return 2
 
-    cache_dir = args.cache_dir or resolve_cache_dir(None) / "llm_baseline"
+    cache_dir = args.cache_dir or DEFAULT_CACHE_DIR
     model = args.model or PROVIDERS[args.provider].model
     baseline = LlmBaseline(caller, model=model, cache_dir=cache_dir)
     predictions = baseline.predict_all(records)

@@ -1,0 +1,510 @@
+{
+  "issue": 86,
+  "split": "val",
+  "config": {
+    "classifier_version": "r1+m2+c3+llm:deepseek-ai/deepseek-v4.1-flash",
+    "weight_llm": 0.5,
+    "model_C": 10.0,
+    "candidate_prompt": "c3",
+    "llm_model": "deepseek-ai/deepseek-v4.1-flash",
+    "train_split_for_val": "train",
+    "train_split_for_test": "train+val"
+  },
+  "val": {
+    "keyword_a": {
+      "split": "val",
+      "versions": [
+        "a1"
+      ],
+      "n": 100,
+      "correct": 40,
+      "accuracy": 0.4,
+      "all_unk_accuracy": 0.39,
+      "per_class": {
+        "BUG": {
+          "support": 1,
+          "predicted": 16,
+          "precision": 0.0625,
+          "recall": 1.0,
+          "f1": 0.11764705882352941
+        },
+        "PERF": {
+          "support": 0,
+          "predicted": 1,
+          "precision": 0.0,
+          "recall": null,
+          "f1": 0.0
+        },
+        "SEC": {
+          "support": 0,
+          "predicted": 1,
+          "precision": 0.0,
+          "recall": null,
+          "f1": 0.0
+        },
+        "LIB": {
+          "support": 2,
+          "predicted": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "DEAD": {
+          "support": 16,
+          "predicted": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "DESIGN": {
+          "support": 33,
+          "predicted": 8,
+          "precision": 0.375,
+          "recall": 0.09090909090909091,
+          "f1": 0.14634146341463414
+        },
+        "FEAT": {
+          "support": 9,
+          "predicted": 10,
+          "precision": 0.6,
+          "recall": 0.6666666666666666,
+          "f1": 0.631578947368421
+        },
+        "UNK": {
+          "support": 39,
+          "predicted": 57,
+          "precision": 0.5263157894736842,
+          "recall": 0.7692307692307693,
+          "f1": 0.625
+        }
+      },
+      "confusion": {
+        "BUG": {
+          "BUG": 1
+        },
+        "PERF": {},
+        "SEC": {},
+        "LIB": {
+          "UNK": 2
+        },
+        "DEAD": {
+          "DESIGN": 5,
+          "FEAT": 2,
+          "UNK": 9
+        },
+        "DESIGN": {
+          "BUG": 10,
+          "PERF": 1,
+          "LIB": 2,
+          "DEAD": 2,
+          "DESIGN": 3,
+          "FEAT": 1,
+          "UNK": 14
+        },
+        "FEAT": {
+          "BUG": 1,
+          "FEAT": 6,
+          "UNK": 2
+        },
+        "UNK": {
+          "BUG": 4,
+          "SEC": 1,
+          "LIB": 2,
+          "DEAD": 1,
+          "FEAT": 1,
+          "UNK": 30
+        }
+      },
+      "by_grade": {
+        "EXPLICIT": {
+          "n": 21,
+          "correct": 2,
+          "accuracy": 0.09523809523809523
+        },
+        "INFERRED": {
+          "n": 40,
+          "correct": 8,
+          "accuracy": 0.2
+        },
+        "UNKNOWN": {
+          "n": 39,
+          "correct": 30,
+          "accuracy": 0.7692307692307693
+        }
+      }
+    },
+    "llm_b": {
+      "split": "val",
+      "versions": [
+        "b1/deepseek-ai/deepseek-v4.1-flash"
+      ],
+      "n": 100,
+      "correct": 53,
+      "accuracy": 0.53,
+      "all_unk_accuracy": 0.39,
+      "per_class": {
+        "BUG": {
+          "support": 1,
+          "predicted": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "PERF": {
+          "support": 0,
+          "predicted": 1,
+          "precision": 0.0,
+          "recall": null,
+          "f1": 0.0
+        },
+        "SEC": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "LIB": {
+          "support": 2,
+          "predicted": 2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "DEAD": {
+          "support": 16,
+          "predicted": 4,
+          "precision": 0.25,
+          "recall": 0.0625,
+          "f1": 0.1
+        },
+        "DESIGN": {
+          "support": 33,
+          "predicted": 36,
+          "precision": 0.5833333333333334,
+          "recall": 0.6363636363636364,
+          "f1": 0.6086956521739131
+        },
+        "FEAT": {
+          "support": 9,
+          "predicted": 29,
+          "precision": 0.3103448275862069,
+          "recall": 1.0,
+          "f1": 0.4736842105263158
+        },
+        "UNK": {
+          "support": 39,
+          "predicted": 27,
+          "precision": 0.7407407407407407,
+          "recall": 0.5128205128205128,
+          "f1": 0.6060606060606061
+        }
+      },
+      "confusion": {
+        "BUG": {
+          "BUG": 1
+        },
+        "PERF": {},
+        "SEC": {},
+        "LIB": {
+          "LIB": 1,
+          "UNK": 1
+        },
+        "DEAD": {
+          "DEAD": 1,
+          "DESIGN": 3,
+          "FEAT": 11,
+          "UNK": 1
+        },
+        "DESIGN": {
+          "PERF": 1,
+          "DEAD": 1,
+          "DESIGN": 21,
+          "FEAT": 5,
+          "UNK": 5
+        },
+        "FEAT": {
+          "FEAT": 9
+        },
+        "UNK": {
+          "LIB": 1,
+          "DEAD": 2,
+          "DESIGN": 12,
+          "FEAT": 4,
+          "UNK": 20
+        }
+      },
+      "by_grade": {
+        "EXPLICIT": {
+          "n": 21,
+          "correct": 12,
+          "accuracy": 0.5714285714285714
+        },
+        "INFERRED": {
+          "n": 40,
+          "correct": 21,
+          "accuracy": 0.525
+        },
+        "UNKNOWN": {
+          "n": 39,
+          "correct": 20,
+          "accuracy": 0.5128205128205128
+        }
+      }
+    },
+    "ours": {
+      "split": "val",
+      "versions": [
+        "r1+m2+c3+llm:deepseek-ai/deepseek-v4.1-flash"
+      ],
+      "n": 100,
+      "correct": 59,
+      "accuracy": 0.59,
+      "all_unk_accuracy": 0.39,
+      "per_class": {
+        "BUG": {
+          "support": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PERF": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "SEC": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "LIB": {
+          "support": 2,
+          "predicted": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "DEAD": {
+          "support": 16,
+          "predicted": 7,
+          "precision": 0.2857142857142857,
+          "recall": 0.125,
+          "f1": 0.17391304347826086
+        },
+        "DESIGN": {
+          "support": 33,
+          "predicted": 24,
+          "precision": 0.8333333333333334,
+          "recall": 0.6060606060606061,
+          "f1": 0.7017543859649124
+        },
+        "FEAT": {
+          "support": 9,
+          "predicted": 16,
+          "precision": 0.3125,
+          "recall": 0.5555555555555556,
+          "f1": 0.39999999999999997
+        },
+        "UNK": {
+          "support": 39,
+          "predicted": 49,
+          "precision": 0.6530612244897959,
+          "recall": 0.8205128205128205,
+          "f1": 0.7272727272727272
+        }
+      },
+      "confusion": {
+        "BUG": {
+          "DESIGN": 1
+        },
+        "PERF": {},
+        "SEC": {},
+        "LIB": {
+          "UNK": 2
+        },
+        "DEAD": {
+          "LIB": 3,
+          "DEAD": 2,
+          "FEAT": 6,
+          "UNK": 5
+        },
+        "DESIGN": {
+          "LIB": 1,
+          "DEAD": 1,
+          "DESIGN": 20,
+          "FEAT": 2,
+          "UNK": 9
+        },
+        "FEAT": {
+          "DEAD": 3,
+          "FEAT": 5,
+          "UNK": 1
+        },
+        "UNK": {
+          "DEAD": 1,
+          "DESIGN": 3,
+          "FEAT": 3,
+          "UNK": 32
+        }
+      },
+      "by_grade": {
+        "EXPLICIT": {
+          "n": 21,
+          "correct": 12,
+          "accuracy": 0.5714285714285714
+        },
+        "INFERRED": {
+          "n": 40,
+          "correct": 15,
+          "accuracy": 0.375
+        },
+        "UNKNOWN": {
+          "n": 39,
+          "correct": 32,
+          "accuracy": 0.8205128205128205
+        }
+      }
+    }
+  },
+  "experiments": [
+    {
+      "name": "모두 UNK",
+      "train_cv_accuracy": 0.45,
+      "val_accuracy": 0.39,
+      "note": "바닥"
+    },
+    {
+      "name": "기준선 A (키워드 a1)",
+      "train_cv_accuracy": 0.377,
+      "val_accuracy": 0.4,
+      "note": "규칙이라 학습 없음 - train 값은 교차 검증이 아니라 그대로 적용"
+    },
+    {
+      "name": "기준선 B (LLM b1)",
+      "train_cv_accuracy": null,
+      "val_accuracy": 0.53,
+      "note": "train 은 부르지 않았다"
+    },
+    {
+      "name": "#84 분류기 (r1+m1, LLM 없음)",
+      "train_cv_accuracy": 0.33,
+      "val_accuracy": 0.36,
+      "note": "규칙 키워드 표가 BUG 98건"
+    },
+    {
+      "name": "#84 분류기, 규칙 표 0",
+      "train_cv_accuracy": 0.46,
+      "val_accuracy": null,
+      "note": ""
+    },
+    {
+      "name": "#84 분류기, 규칙 표 0.5",
+      "train_cv_accuracy": 0.367,
+      "val_accuracy": null,
+      "note": ""
+    },
+    {
+      "name": "모델만: 맥락 텍스트, UNK 포함",
+      "train_cv_accuracy": 0.56,
+      "val_accuracy": null,
+      "note": "C=10, 클래스 가중치 없음"
+    },
+    {
+      "name": "모델만: + 화면 모양",
+      "train_cv_accuracy": 0.583,
+      "val_accuracy": null,
+      "note": ""
+    },
+    {
+      "name": "모델만: + 화면 모양 + 삭제 본문",
+      "train_cv_accuracy": 0.563,
+      "val_accuracy": null,
+      "note": "버림"
+    },
+    {
+      "name": "모델만: + 화면 모양 + 추가 헝크 (m2)",
+      "train_cv_accuracy": 0.603,
+      "val_accuracy": 0.52,
+      "note": "채택"
+    },
+    {
+      "name": "모델만: m2, 클래스 가중치 balanced",
+      "train_cv_accuracy": 0.587,
+      "val_accuracy": null,
+      "note": "버림"
+    },
+    {
+      "name": "LLM 만 c1",
+      "train_cv_accuracy": null,
+      "val_accuracy": 0.52,
+      "note": "#59 고정 프롬프트, val 만 불렀다"
+    },
+    {
+      "name": "LLM 만 c2",
+      "train_cv_accuracy": 0.483,
+      "val_accuracy": 0.51,
+      "note": "FEAT 30건(정답 9)"
+    },
+    {
+      "name": "m2 + c2, 가중치 0.5",
+      "train_cv_accuracy": 0.633,
+      "val_accuracy": 0.59,
+      "note": "모델 특징은 m2 와 같은 구성, 실험 스크립트"
+    },
+    {
+      "name": "m2 + c2, LLM 답을 모델 특징으로 (C=10)",
+      "train_cv_accuracy": 0.603,
+      "val_accuracy": 0.56,
+      "note": "버림"
+    },
+    {
+      "name": "m2 + c2, LLM 답을 모델 특징으로 (C=1)",
+      "train_cv_accuracy": 0.59,
+      "val_accuracy": 0.54,
+      "note": "버림"
+    },
+    {
+      "name": "m2 + c2, 가중치 1.0",
+      "train_cv_accuracy": 0.483,
+      "val_accuracy": 0.51,
+      "note": "LLM 답 그대로와 같다"
+    },
+    {
+      "name": "LLM 만 c3",
+      "train_cv_accuracy": 0.617,
+      "val_accuracy": 0.59,
+      "note": "c2 의 train 오류에서 만든 규칙"
+    },
+    {
+      "name": "m2 + c3, 가중치 0.5 (최종)",
+      "train_cv_accuracy": 0.673,
+      "val_accuracy": 0.59,
+      "note": "가중치 0.4~0.7 이 0.653~0.673"
+    },
+    {
+      "name": "m2 + c3, 가중치 0.5 + 근거 관문",
+      "train_cv_accuracy": 0.657,
+      "val_accuracy": null,
+      "note": "관문이 걸린 81건 중 정답 UNK 56건. 버림"
+    },
+    {
+      "name": "m2 + c3, LLM 답 보정 P(정답|LLM)",
+      "train_cv_accuracy": 0.65,
+      "val_accuracy": null,
+      "note": "최고값, 버림"
+    },
+    {
+      "name": "m2 + c3, LLM 답을 모델 특징으로",
+      "train_cv_accuracy": 0.627,
+      "val_accuracy": null,
+      "note": "최고값, 버림"
+    }
+  ],
+  "val_views": "experiments 의 val_accuracy 가 있는 행 전부 (13개). 고르는 기준은 train_cv_accuracy (학습 300건 5겹, 시드 0)"
+}

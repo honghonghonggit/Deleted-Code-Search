@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|Python 3.5 미만 지원 제거로 funcsigs 백포트가 불필요해졌고, 이 파일은 표준 라이브러리 inspect로 대체되어 호출자를 잃었다."}

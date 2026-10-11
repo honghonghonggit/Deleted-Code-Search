@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지 \"Clearing existing files\"와 대체 코드 없이 파일 전체가 삭제된 것으로 보아, integration_test의 retinanet 모델 예제 기능 자체가 제거된 것이다."}

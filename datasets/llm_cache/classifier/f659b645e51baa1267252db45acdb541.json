@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|`prepare_model_for_training`을 `unsloth_zoo.training_utils`에서 임포트해 호출하도록 바뀌어, 그 내부 구현이 이 함수의 역할을 대신하게 됐다."}

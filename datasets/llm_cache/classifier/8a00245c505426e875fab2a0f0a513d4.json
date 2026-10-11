@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|전역 상태 충돌을 없애기 위해 인스턴스별 클라이언트 지원으로 RAG 저장소를 통합하는 리팩터링 과정에서 임베더 설정 방식이 구조적으로 변경됨."}

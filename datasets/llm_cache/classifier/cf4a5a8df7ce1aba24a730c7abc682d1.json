@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|get_params가 경고 레지스트리를 조작해 스레드 안전성 문제와 pop from empty list 크래시를 일으키던 동작을 제거하면서, 그 deprecated 파라미터 처리 동작을 검증하던 이 테스트가 함께 삭제됐다."}

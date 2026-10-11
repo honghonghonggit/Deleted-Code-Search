@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문 Migration에 `--profile`이 managed `profile-use`로 통합되고 프로필 관련 서브커맨드가 제거됐다고 명시되어, 로컬 프로필 목록 조회 기능 자체가 CLI 표면에서 사라졌다."}

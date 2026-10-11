@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|test_boston이 pytest.mark.parametrize로 재작성되어 같은 check_boston_criterion 검증이 다른 인터페이스로 계속 수행된다."}

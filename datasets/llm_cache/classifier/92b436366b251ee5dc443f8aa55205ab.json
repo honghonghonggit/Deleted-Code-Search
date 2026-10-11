@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 CSVImportCommand와 ExcelImportCommand를 제네릭 UploadCommand로 리팩터링하면서 ExcelImportCommand 기반 테스트가 제거됨."}

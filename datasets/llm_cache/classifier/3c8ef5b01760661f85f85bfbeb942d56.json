@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지·PR 본문·리뷰 어디에도 kuzu_execute나 kuzu_memory.py를 이름으로 가리키며 삭제 이유를 말하는 문장이 없고, 같은 파일에 추가·대체된 코드도 없어 근거를 댈 수 없다."}

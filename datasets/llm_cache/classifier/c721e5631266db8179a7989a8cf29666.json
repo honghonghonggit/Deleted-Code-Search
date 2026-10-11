@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 같은 자리에 fillna를 try/except 기반으로 재작성해 예외 처리와 coerce 경로를 NDArrayBackedExtensionBlock 등으로 옮겼으므로, 삭제된 본문의 일은 새 구현이 이어받는다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 headless 공개 실행용 관리자 비밀번호 자동 생성 기능(#7392)을 되돌리는 revert이므로, 그 기능을 검증하던 테스트 헬퍼가 함께 제거됐다."}

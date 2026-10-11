@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 `integrations/mem0-plugin/`을 obsolete로 제거 대상에 명시했고, 이 테스트 파일은 그 삭제된 디렉터리에 속해 검증 대상이 사라졌다."}

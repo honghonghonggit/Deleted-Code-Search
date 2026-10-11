@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #38758 \"Deprecate TF + JAX\"와 커밋 메시지 \"Delete the tests\"가 TensorFlow 지원 종료로 인해 이 TF 테스트 파일 자체를 제거했음을 밝히고 있다."}

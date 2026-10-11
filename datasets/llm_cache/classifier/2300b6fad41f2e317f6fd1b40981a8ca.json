@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 coordinator 도입으로 모든 tp/pp 코드가 `get_world()`/`get_tp()`/`get_pp()`로 그룹을 명시하도록 인터페이스를 재편한다고 밝혀, CPU world group 조회가 새 GroupCoordinator 구조로 대체된 구조 변경이다."}

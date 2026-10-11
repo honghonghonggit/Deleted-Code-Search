@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|이슈 #9560이 get_params의 DeprecationWarning 처리(경고 레지스트리 수정)가 잘못됐다고 지목하고, 이 테스트는 그 deprecated 속성 제외 동작을 검증하던 것이라 그 동작 제거와 함께 삭제됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지 \"delete packages\"와 PR 본문 \"removing all vendored dependencies from Requests\"가 vendored urllib3 구현을 외부 의존성으로 대체했음을 보여준다."}

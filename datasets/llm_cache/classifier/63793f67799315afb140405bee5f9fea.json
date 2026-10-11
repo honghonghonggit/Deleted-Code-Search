@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 DEFAULT_FILE_STORAGE·STATICFILES_STORAGE 설정과 get_storage_class()를 deprecation timeline에 따라 제거했다고 밝혀, STATICFILES_STORAGE 설정 접근을 검증하던 이 테스트가 검증 대상 기능 자체의 폐기를 반영한다."}

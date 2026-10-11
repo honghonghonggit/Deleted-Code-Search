@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|리뷰 코멘트에서 `check_array_api_multioutput_regression_metric`과 `check_array_api_regression_metric_multioutput` 두 함수를 하나로 병합했다고 밝혔고, 같은 커밋이 `check_array_api_regression_metric_multioutput`에 multioutput 배열/raw_values 케이스를 추가해 그 테스트 역할을 이어받았다."}

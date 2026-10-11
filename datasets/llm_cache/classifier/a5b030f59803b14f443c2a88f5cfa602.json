@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Remove deprecated PydanticSchemaParser in favor of direct schema generation\"이라며 Python 표현 기반 스키마 파서를 JsonSchema 직접 생성 방식으로 대체했으므로, 구조 변경에 따른 제거다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 이 테스트들이 test_migration_from_schema_32.py로 이동해 더 이상 올바르지 않아 제거한다고 밝혔고, 검증 대상이던 마이그레이션 테스트가 이 커밋에서 사라져 호출자를 잃었다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"removes the Filters Set feature including the deprecated DASHBOARD_NATIVE_FILTERS_SET feature flag and all related API endpoints\"라며 기능 자체를 영구 제거한다고 밝히고, 이 테스트는 그 필터셋 업데이트 API를 검증하는 테스트다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 \"removing all vendored dependencies from Requests\"라고 밝혀 벤더링된 직접 구현을 외부/표준 라이브러리로 대체하는 작업임을 나타낸다."}

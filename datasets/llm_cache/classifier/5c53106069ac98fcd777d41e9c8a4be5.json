@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|삭제된 함수가 하던 transformers 패치를 같은 커밋에서 unsloth_zoo.loss_utils의 transformers_losses_patcher 호출로 대체했다."}

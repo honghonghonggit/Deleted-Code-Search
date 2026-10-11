@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 레거시 데몬 CLI(`browser_use/skill_cli/**/*`)를 제거하고 스킬 중심 CLI로 교체했다고 명시해 기능 자체를 없앴다."}

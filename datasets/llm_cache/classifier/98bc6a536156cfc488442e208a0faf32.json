@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지 \"delete packages\"와 PR 본문 \"removing all vendored dependencies\"가 vendored 의존성 제거를 명시하므로, 직접 구현을 외부 의존성으로 대체한 것이다."}

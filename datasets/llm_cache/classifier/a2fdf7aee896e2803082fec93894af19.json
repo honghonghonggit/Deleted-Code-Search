@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지 'normalize_components in sparsePCA'와 삭제된 테스트가 검증하던 normalize_components=False 옵션 자체가 제거되어, 사용자가 쓰던 기능이 없어진 경우다."}

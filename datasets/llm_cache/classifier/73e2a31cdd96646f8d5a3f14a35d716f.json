@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 test_predict와 test_k_means_fit_predict가 같은 것을 검사한다며 test_kmeans_predict로 통합했다고 밝혔고, 같은 커밋이 그 대체 테스트를 추가했으므로 검증 내용이 다른 자리로 이어졌다."}

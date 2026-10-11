@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #5353 본문이 \"revert for now to get 2.23.0 out the door\"라며 미검토 병합 PR(#4976)을 되돌린다고 밝혀, BOM 응답 지원 기능 자체가 제거됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지는 CI에서 Python 3.5 미만 지원 제거만 언급할 뿐, 이 __hash__ 메서드 삭제와의 연관성을 알 수 없다."}

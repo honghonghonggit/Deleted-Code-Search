@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored 의존성을 제거하고 외부 라이브러리로 대체한다고 밝혔고, 이 파일은 vendor 경로(requests/packages/chardet/)에 있다."}

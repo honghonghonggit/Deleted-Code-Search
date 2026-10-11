@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 기존 integer/UUID 기반 permalink를 deprecate하고 hashids 기반으로 대체한다고 명시해, 정수 키 파싱 함수 parse_permalink_key와 그 테스트가 제거됐다."}

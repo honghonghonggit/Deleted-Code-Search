@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Docling v2에서 문서 백엔드 추상화와 파이프라인 인터페이스가 재설계되면서 이전 모델 검증 로직이 새 구조에 맞지 않게 되어 제거됐다."}

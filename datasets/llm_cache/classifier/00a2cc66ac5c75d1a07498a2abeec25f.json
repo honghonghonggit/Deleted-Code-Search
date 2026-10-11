@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"removes the export toggles, split-folder naming, ... API/MCP fields, and saving helpers\"라며 #6107이 도입한 GGUF 샤드 제어 기능 자체를 제거한다고 명시했고, 이 테스트 헬퍼는 그 제거된 업로드/저장 경로를 검증하던 것이다."}

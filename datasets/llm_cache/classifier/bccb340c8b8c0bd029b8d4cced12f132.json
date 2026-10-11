@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored 의존성을 제거한다고 밝혔고, chardet은 외부 라이브러리로 대체되는 vendored 코드다."}

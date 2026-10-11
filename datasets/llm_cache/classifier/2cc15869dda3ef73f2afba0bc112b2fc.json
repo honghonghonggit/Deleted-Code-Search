@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 \"delete packages\"이고 PR 본문이 vendored 의존성 제거를 목표로 한다고 밝혀, 직접 구현을 외부 라이브러리 호출로 대체한 것이다."}

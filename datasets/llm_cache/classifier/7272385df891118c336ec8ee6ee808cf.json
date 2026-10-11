@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 tseries 재구성(reorg)을 나타내며, 테스트 함수가 다른 위치로 이동되었을 가능성이 높다."}

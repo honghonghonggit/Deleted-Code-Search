@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `content.py`를 `content_streams.py`로 바꾸고 ContentStreams API를 Streams API로 교체한다고 밝혀, 테스트하던 `content` 객체의 `can_replay`/`get_headers`/`aread` 인터페이스가 사라지고 스트림 기반 API로 대체된 구조 변경이다."}

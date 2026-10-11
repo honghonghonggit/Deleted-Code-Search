@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문에 모든 테스트가 tests 모듈로 이동하고 requests.utils 관련 테스트는 tests.test_utils로 분리됐다고 명시되어, 이 테스트가 다른 위치로 옮겨졌음을 알 수 있다."}

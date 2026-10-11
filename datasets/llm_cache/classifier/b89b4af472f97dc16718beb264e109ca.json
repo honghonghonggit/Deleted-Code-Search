@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 FfmpegDecoder를 감싸는 새 __init__이 들어와 프레임 읽기 책임이 FfmpegDecoder로 옮겨졌고, readahead/readbehind 스레드 대신 LRU 캐시 기반 구조로 인터페이스가 바뀌었다."}

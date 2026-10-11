@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #2573이 BrowserSession을 LocalBrowserConnection/RemoteBrowserConnection으로 분리하는 대규모 재구성이므로, PDF 자동 다운로드 로직은 새 연결 구현 클래스로 옮겨졌을 뿐 같은 일이 다른 자리에서 계속된다."}

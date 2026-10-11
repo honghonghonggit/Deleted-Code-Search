@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #648이 `content.py`를 `content_streams.py`로 옮기고 ContentStreams API를 Streams API로 재편하면서, `encode(data=...)`가 돌려주던 Content 객체의 `can_replay`/`get_headers`/`aread` 인터페이스가 사라져 이 테스트가 검증할 대상이 없어졌다."}

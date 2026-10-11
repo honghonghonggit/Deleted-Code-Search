@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"Remove eddystone temperature integration\"이라 명시하고 Breaking change로 표시했으며, 통합 자체가 지원 설치에서 사용할 수 없어 제거된다고 밝혀 사용자 기능 자체가 없어졌다."}

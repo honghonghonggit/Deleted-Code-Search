@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 PruningContentFilter 클래스를 새로 추가하면서 기존 score_element 기반 점수 계산 대신 _prune_tree·metric_weights 등 다른 구조로 필터링을 재구현했다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 자리에 `_add_code_execution_tools`가 `hasattr` 가드와 `List[BaseTool]` 반환 타입으로 재작성되어, 커밋의 타입 처리·도구 준비 리팩터링에 맞춰 인터페이스가 바뀐 것이 근거다."}

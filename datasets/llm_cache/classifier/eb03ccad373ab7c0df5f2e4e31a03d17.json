@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|PR 본문은 test_trainer.py를 여러 파일로 분할하는 리팩터링이라고만 하고, 이 테스트 함수를 이름으로 가리키며 삭제 이유를 말하는 문장이 없으며, 삭제된 본문 자체도 이유를 드러내지 않는다."}

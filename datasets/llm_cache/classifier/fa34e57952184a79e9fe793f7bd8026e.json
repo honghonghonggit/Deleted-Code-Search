@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 V0 attention backend를 제거하고 제거된 V0 backend 요청 시 오류를 내도록 했다고 명시해, 사용자 기능 자체를 없앤 삭제다."}

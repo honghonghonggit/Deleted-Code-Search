@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|pydantic_core 전환으로 필드 추론 로직이 _internal 모듈의 _fields/_generate_schema로 재구성되면서 이 ModelField.infer가 그 구조에 맞지 않게 되어 제거됐다."}

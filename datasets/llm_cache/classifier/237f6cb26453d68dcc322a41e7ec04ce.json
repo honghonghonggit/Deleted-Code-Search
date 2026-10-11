@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 커밋은 GPT4Vision 이미지 로더를 추가하는 작업으로, 삭제된 테스트가 검증하던 ClipProcessor.get_image_features의 호출자나 대상이 화면에 남아 있지 않아 검증 대상이 사라진 것으로 보인다."}

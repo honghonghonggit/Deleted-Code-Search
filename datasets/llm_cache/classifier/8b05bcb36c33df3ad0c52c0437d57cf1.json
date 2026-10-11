@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 `superset/viz.py`와 그 importer들을 제거했다고 명시했고, 이 테스트가 검증하던 `viz.BaseDeckGLViz._has_layer_scoped_filters`가 그 삭제 대상이라 검증할 대상이 없어져 함께 지워졌다."}

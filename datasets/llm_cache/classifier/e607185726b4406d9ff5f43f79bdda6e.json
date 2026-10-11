@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"Flow execution logic moves into `run_crew`\"라며 이 모듈의 실행 로직이 `run_crew` 경로로 옮겨졌고 \"the standalone `kickoff_flow` module is removed\"라고 명시하므로, 같은 일이 다른 자리에서 계속되는 구조 변경이다."}

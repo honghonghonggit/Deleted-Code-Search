@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 tp와 pp 간 코드 중복 제거를 위해 coordinator를 도입했다고 명시하여 구조 변경으로 제거됨"}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 HGBT 손실을 새 공통 loss 모듈로 교체한다고 밝혔고, inverse_link_function은 새 Loss API가 담당하게 되어 이 자리에서 사라졌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #2211이 \"feat: add prompt observability code (#2027)\" 커밋을 되돌리는(revert) 것이므로, 해당 기능 자체가 제거되어 이 테스트가 검증하던 기능이 사라졌다."}

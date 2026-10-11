@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Revert\"로 샌드박스 기능 도입 자체를 되돌리는 것이므로, 보안 검사 함수도 기능 폐기와 함께 제거됨."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 1.3에서 deprecated된 loss들을 제거하는 작업임을 밝히고 있고, 삭제된 테스트는 제거된 loss='binary_crossentropy' 옵션의 검증을 담당했으므로 사용자 옵션 자체가 없어진 FEAT이다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 main_v0.py 파일과 관련 기능을 제거한다고 밝혔고, 삭제된 read_root는 \"/\" 경로를 /mkdocs로 리다이렉트하던 공개 엔드포인트라 사용자 기능 자체가 사라졌다."}

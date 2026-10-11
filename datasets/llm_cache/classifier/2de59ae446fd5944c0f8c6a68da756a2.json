@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|테스트를 pytest idiom으로 리팩터링하면서 test_date_converters라는 새 테스트 스위트로 재구성했고, 이 테스트는 그 과정에서 제거됨."}

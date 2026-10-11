@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|tearDown에서 self.hass.stop()을 직접 호출하던 방식이 pytest 픽스처 기반 async 테스트 구조로 바뀌면서 hass 정리 책임이 프레임워크로 옮겨졌다."}

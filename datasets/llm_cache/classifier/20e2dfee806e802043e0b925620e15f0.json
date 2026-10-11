@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 test_predict와 test_k_means_fit_predict가 같은 것을 검사한다며 test_kmeans_predict로 합쳤다고 밝혀, 검증 대상이 중복되어 삭제됐다."}

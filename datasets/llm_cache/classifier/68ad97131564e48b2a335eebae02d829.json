@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|pluggable_backend 되돌리기(revert)의 불완전함을 고치는 커밋으로, 새로 생성됐던 파일들을 원래 구조로 되돌리면서 이 함수가 그 구조에 맞지 않게 되어 제거됐다."}

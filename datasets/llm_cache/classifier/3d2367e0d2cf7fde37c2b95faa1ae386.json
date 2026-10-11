@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 embedchain 프레임워크 전체를 모노레포에서 아카이브 저장소로 추출하는 폐기 작업이라고 명시했고, 이 테스트가 검증하던 embedchain의 BaseLlm 기능 자체가 저장소에서 사라졌다."}

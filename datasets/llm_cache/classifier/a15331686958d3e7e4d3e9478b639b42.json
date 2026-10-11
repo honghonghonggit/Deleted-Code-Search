@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Upgraded Layout Postprocessing, sending old code back to ERZ\"와 \"Implement hierachical cluster layout processing\"이라며 레이아웃 후처리 구조를 계층적 클러스터 처리로 재편했고, 이 함수는 그 영역의 옛 클러스터 정리 코드다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Remove deprecated PydanticSchemaParser in favor of direct schema generation\"라며 이 파서 자체를 폐기하고 JSON 스키마 생성으로 대체했음을 밝히고 있다."}

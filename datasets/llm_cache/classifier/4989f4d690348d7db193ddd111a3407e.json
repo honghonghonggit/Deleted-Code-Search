@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 Langchain 의존성을 네이티브 browser_use.llm 인터페이스로 교체하는 재작성이라 했고, 이 파일도 Langchain AIMessage/ToolMessage 기반 메시지 처리를 버리고 browser_use.llm.messages 기반으로 바뀌면서 이 함수가 맞지 않게 됐다."}

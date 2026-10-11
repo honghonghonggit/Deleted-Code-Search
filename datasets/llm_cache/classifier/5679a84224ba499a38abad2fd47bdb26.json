@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #2573이 BrowserSession을 Playwright에서 cdp-use/bubus 기반 이벤트 API로 전면 재작성하면서, PDF 자동 다운로드 설정 프로퍼티가 새 다운로드 처리 방식(Browser.setDownloadBehavior CDP 호출)으로 대체되어 기존 인터페이스가 맞지 않게 됐다."}

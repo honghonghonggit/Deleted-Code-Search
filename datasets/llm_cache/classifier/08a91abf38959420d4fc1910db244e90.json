@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 FLA hook과 그 설치 경로를 제거했다고 밝혔고, 이 테스트가 검증하던 `_install_fast_path_hooks`의 FLA hook 동작 자체가 사라져 검증 대상이 없어졌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Model._meta API가 공식화되면서 테스트가 검증하던 get_field_by_name 기반 내부 동작이 바뀌어 제거됐다."}

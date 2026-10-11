@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`LegacyStandardPdfPipeline`이 `StandardPdfPipeline`으로 대체·통합되면서 파이프라인 구성 로직이 새 클래스로 이동하고 이 클래스는 deprecated shim으로 축소됨."}

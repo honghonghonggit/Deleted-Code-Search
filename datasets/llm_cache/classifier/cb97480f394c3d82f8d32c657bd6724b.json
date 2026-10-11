@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 test_astype_string을 test_astype_str로 바꾸고 using_infer_string 분기를 추가해, str 별칭 매핑 변경에 맞춰 테스트 구조를 재작성했기 때문이다."}

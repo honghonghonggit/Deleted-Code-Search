@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 함수가 같은 자리에서 None 스텁 대신 _compute_text_cells()로 실제 SegmentedPdfPage를 만들어 반환하도록 구현이 교체됐고, PR 본문이 \"All backends now implement get_segmented_page()\"라며 백엔드 인터페이스 변경을 명시한다."}

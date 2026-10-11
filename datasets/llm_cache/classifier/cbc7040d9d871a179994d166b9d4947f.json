@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Replace all code with tf.keras redirects\"라 Keras를 tf.keras로 리다이렉트하며 기존 백엔드 함수 기능 자체가 제거됐다."}

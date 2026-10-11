@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|MariaDB에서 'transaction_isolation'이 없는 시스템 변수라 오류가 나던 것을, mysql_version에 따라 변수를 고르던 함수를 지우고 SET SESSION TRANSACTION ISOLATION LEVEL 문을 생성하도록 고쳤다."}

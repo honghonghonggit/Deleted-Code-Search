@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Replace all code with tf.keras redirects\"로, Keras 구현을 tf.keras로 리다이렉트하는 구조 변경을 명시하고 있다."}

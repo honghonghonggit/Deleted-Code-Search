@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 \"Removed column fetching for tables\"라며 테이블 메타데이터(컬럼 타입 등)를 데이터소스에서 가져오던 동작을 없앴다고 밝혔고, 이 테스트가 검증하던 extract_table_references 기반 테이블 참조 추출이 그 제거된 경로에 속한다."}

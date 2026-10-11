@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 benchmark_v2를 BenchmarkRunner·BenchmarkingConfig 기반의 새 구조로 전면 교체한다고 밝혀, 타이밍을 담당하던 이 클래스의 stop 메서드가 새 러너 구조로 책임이 옮겨가며 사라졌다."}

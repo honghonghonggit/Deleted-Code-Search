@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|StringDtype 매핑 도입으로 테스트 구조가 재편되어 기존 테스트 오버라이드가 불필요해졌다."}

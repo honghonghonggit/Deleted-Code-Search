@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 레거시 분리 훅(get_num_mm_encoder_tokens/get_num_mm_connector_tokens)을 새 통합 훅 get_mm_lora_token_counts()로 마이그레이션하는 작업이라 했고, 같은 커밋이 이 파일에 그 통합 훅을 추가해 동일한 토큰 계산을 이어받았다."}

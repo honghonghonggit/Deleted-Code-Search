@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|name 프로퍼티가 제거되고 이름 계산 로직이 async_setup_entry의 엔티티 생성 시점으로 옮겨져 _attr_name으로 설정되며, 같은 일이 다른 자리에서 계속된다."}

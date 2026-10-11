@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #11427이 릴리스 자동화를 Logfire 방식으로 재구성하면서 이 함수가 속한 기존 릴리스 스크립트 구조 자체가 새 자동화 흐름으로 대체됐다."}

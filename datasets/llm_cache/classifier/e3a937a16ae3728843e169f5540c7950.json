@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `_default_models`의 수기 모델 경로 테이블을 resolver로 교체한다고 밝혀, 이 테이블을 검증하던 테스트가 더 이상 맞지 않게 됐다."}

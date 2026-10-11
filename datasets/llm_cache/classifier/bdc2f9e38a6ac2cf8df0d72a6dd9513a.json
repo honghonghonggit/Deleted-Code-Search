@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 백엔드 추상화 계층 도입과 파이프라인 인터페이스 재편을 명시한 대규모 재작성이며, 삭제된 model_validator는 이 파일의 새 구조(추가된 InputFormat/OutputFormat, Table/TextElement 등)로 대체되어 같은 자리에 대체 코드가 없다."}

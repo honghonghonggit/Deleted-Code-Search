@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"Remove default pre-selection and numeric keybindings\"라며 숫자 키바인딩 제거를 명시했고, 삭제된 코드가 바로 그 숫자 키바인딩('4') 등록이므로 사용자 조작 기능 자체가 없어진 것이다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|커밋 메시지가 MariaDB에서 \"Unknown system variable 'transaction_isolation'\" 오류를 수정한다고 밝히고, 삭제된 함수가 버전에 따라 tx_isolation/transaction_isolation 변수를 선택하던 잘못된 동작의 원인이었다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 \"removing all vendored dependencies from Requests\"라 밝혀, 벤더링된 urllib3 내부 구현을 외부 의존성 호출로 대체한 삭제다."}

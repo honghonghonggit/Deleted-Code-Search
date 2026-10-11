@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 async 클라이언트를 공유 베이스 위의 형제로 재구성하고 테스트를 AsyncDoclingServiceClient로 재조준했다고 밝히며, 같은 자리에 max_in_flight 인자가 추가된 fake_wait 대체 코드가 들어왔다."}

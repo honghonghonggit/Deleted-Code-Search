@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 \"the FLA hook on the availability gate\"를 제거 대상으로 명시했고, 이 테스트가 검증하던 `_install_fast_path_hooks`의 FLA 게이트 훅 자체가 사라져 검증 대상이 없어졌다."}

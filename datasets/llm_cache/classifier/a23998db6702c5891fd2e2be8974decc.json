@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 GGUF 지원을 외부 플러그인(vllm-gguf-plugin)으로 이관하며 기존 GGUF 양자화 기능을 제거한다고 명시하고, 이 함수는 그 GGUF LinearMethod의 가중치 생성 구현이다."}

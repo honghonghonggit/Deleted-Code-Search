@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 wemo 엔티티들의 중복 코드를 공통 모듈로 병합하는 리팩터이고, device_info가 WemoEntity 기반 클래스로 옮겨졌음을 보여주는 `from .entity import WemoEntity` 추가와 `class WemoLight(WemoEntity, LightEntity)` 변경에서 같은 일이 다른 자리에서 계속됨을 알 수 있다."}

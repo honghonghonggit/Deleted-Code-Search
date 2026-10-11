@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 py.test 로 전환했음을 나타내므로 테스트 프레임워크 교체로 unittest 스타일 테스트 메서드가 제거됨"}

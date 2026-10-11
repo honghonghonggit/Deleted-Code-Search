@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"Flow execution logic moves into `run_crew`\"라며 실행 로직이 run_crew로 옮겨졌고 `crewai flow kickoff`는 같은 run_crew 경로로 위임하는 deprecated 별칭으로 남는다고 설명하므로, 같은 일이 다른 자리에서 계속된다."}

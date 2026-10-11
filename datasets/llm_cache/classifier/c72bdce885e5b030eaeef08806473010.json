@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 vendored 의존성을 전부 제거하는 작업이라 밝히고 있어, urllib3의 공개 메서드인 request가 벤더링된 패키지째로 사라진 기능 제거다."}

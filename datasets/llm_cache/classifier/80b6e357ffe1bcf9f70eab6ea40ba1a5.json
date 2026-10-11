@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Oracle identity column 지원으로 시퀀스/트리거 기반 이름 생성 방식이 _get_no_autofield_sequence_name·_get_sequence_name 등 새 시퀀스 조회 구조로 대체되어, 트리거 이름을 만들던 이 함수가 새 인터페이스에 맞지 않게 됐다."}

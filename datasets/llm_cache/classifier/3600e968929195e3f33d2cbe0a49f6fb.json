@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 setUp()에서 tempfile.TemporaryDirectory()로 임시 디렉터리를 만들고 파괴하도록 바꿔 개별 테스트의 파일 삭제 필요를 없앴다고 밝혀, tearDown의 remove_settings 호출이 setUp의 addCleanup 기반 정리로 대체됐다."}

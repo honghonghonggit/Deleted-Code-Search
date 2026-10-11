@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|삭제된 함수가 transformers의 LlamaForCausalLM을 Unsloth 버전으로 교체하던 것을, 같은 커밋에서 unsloth_zoo.loss_utils의 transformers_losses_patcher 호출로 대체해 외부 라이브러리 패처가 그 일을 이어받았다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 assert_invalid_comparison 헬퍼를 추가하고 test_dt64arr_cmp_na_scalar_invalid가 동일한 None/np.nan 케이스를 헬퍼 호출로 이어받아, 검증 로직이 다른 자리로 재구성됐다."}

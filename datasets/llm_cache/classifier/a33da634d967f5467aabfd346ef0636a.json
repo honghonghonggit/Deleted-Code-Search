@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 커밋이 같은 자리에 `get(self, k, block=False, encoding=None)` 시그니처로 대체 구현을 추가해 인터페이스가 바뀌었고, `get_bool` 래퍼 추가로 MockParams의 API 구조가 재편됐다."}

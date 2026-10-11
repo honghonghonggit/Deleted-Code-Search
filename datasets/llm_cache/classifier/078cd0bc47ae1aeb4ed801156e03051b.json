@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목과 본문에서 TensorFlow/Jax 지원을 라이브러리 전반에서 완전히 제거한다고 명시했고, 이 함수는 tf.Tensor를 사용하는 TF 전용 구현이므로 기능 자체를 없앤 것이다."}

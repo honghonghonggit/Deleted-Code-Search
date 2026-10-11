@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 agent-native 정책에 따라 plugin 도구를 제거하고 \"Removes existing feature or API\"를 체크했으며, plugin 모듈 디렉터리 전체가 삭제되어 PluginError.create가 속한 기능 자체가 없어졌다."}

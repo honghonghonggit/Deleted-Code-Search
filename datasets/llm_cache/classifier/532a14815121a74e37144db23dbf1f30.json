@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 V0 스펙 디코딩 코드를 제거한다고 밝혔고, 이 테스트는 제거 대상인 V0 TypicalAcceptanceSampler를 검증하므로 기능 폐기로 사라졌다."}

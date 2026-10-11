@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 nmap_tracker를 2021.6 버전으로 되돌리는 revert임을 밝히고 있어, config_flow 구조 자체가 이전 버전으로 바뀌면서 이 테스트가 맞지 않게 됐다."}

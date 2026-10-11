@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 \"Unvendor joblib\"으로, 벤더링된 joblib/loky 구현을 제거하고 외부 joblib 의존성으로 대체했기 때문이다."}

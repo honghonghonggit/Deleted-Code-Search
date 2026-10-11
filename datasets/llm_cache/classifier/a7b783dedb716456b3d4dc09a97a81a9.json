@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지 \"delete packages\"와 PR 본문은 vendored 의존성 제거를 말할 뿐 이 request 함수를 이름으로 가리키지 않고, 같은 커밋이 이 파일에 추가한 코드나 대체 코드도 없어 삭제 이유를 화면만으로 판단할 수 없다."}

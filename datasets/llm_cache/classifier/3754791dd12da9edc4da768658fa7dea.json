@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|클래스 메서드 `_get_all_views`가 모듈 수준 함수 `get_all_views`로 옮겨져 같은 일(뷰 이름 조회)을 계속 수행한다."}

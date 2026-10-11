@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 examples/offline_inference/basic/generate.py -> examples/basic/offline_inference/generate.py 처럼 예제 디렉터리 재배치를 명시했고, 이 함수는 그 재배치로 경로가 바뀐 파일에 속해 있었다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `_content_streams.py`를 `_content.py`로 옮기고 대부분 평범한 함수 구현으로 바꾸는 내부 리팩터링이라 밝혀, 같은 일이 다른 구조·자리에서 계속되도록 코드가 재구성된 것이다."}

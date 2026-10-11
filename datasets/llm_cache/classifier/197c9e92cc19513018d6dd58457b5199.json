@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|LegacyStandardPdfPipeline의 __init__이 StandardPdfPipeline을 상속해 super().__init__만 호출하는 deprecated 스텁으로 바뀌었고, 기존 초기화 로직은 StandardPdfPipeline으로 옮겨져 같은 일이 다른 자리에서 계속된다."}

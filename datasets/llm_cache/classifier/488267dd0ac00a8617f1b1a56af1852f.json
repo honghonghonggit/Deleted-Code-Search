@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 Selenium 지원을 전면 제거하고 Playwright를 유일한 백엔드로 삼는다고 명시하며, 이 테스트는 제거된 Selenium 폴백 기능 자체를 검증하던 것이다."}

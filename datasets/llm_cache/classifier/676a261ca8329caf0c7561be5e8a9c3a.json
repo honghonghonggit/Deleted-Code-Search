@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|테스트가 이벤트 버스 핸들러로 등록하던 on_save_completed가 새 통합 테스트에서 사라졌고, 새 코드는 이벤트 수집 대신 memory.remember()를 직접 호출해 검증하므로 호출자를 잃었다."}

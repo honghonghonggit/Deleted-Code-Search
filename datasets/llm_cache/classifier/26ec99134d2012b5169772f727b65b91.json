@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 예제를 노트북 스타일로 재작업하고 nmslib 래퍼 클래스의 API를 재구성한다고 밝혀, transform이 _transform으로 위임하던 구조가 바뀌었다."}

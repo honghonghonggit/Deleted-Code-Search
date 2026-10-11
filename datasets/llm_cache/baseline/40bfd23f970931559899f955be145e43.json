@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지에 \"Drop sync client\"와 \"Async only\"라고 명시되어 동기 클라이언트 기능 자체를 제거했다."}

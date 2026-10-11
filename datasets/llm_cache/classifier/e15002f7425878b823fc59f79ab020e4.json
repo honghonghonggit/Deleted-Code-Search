@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 \"Migration to database schema version 42 happens before recorder starts, this means we don't need to support generating history queries for databases with schema version < 25\"라며 schema < 25 지원 자체를 제거한다고 밝히고, 이 테스트는 그 제거된 기능(schema 25 마이그레이션 중 쿼리)을 검증하던 것이다."}

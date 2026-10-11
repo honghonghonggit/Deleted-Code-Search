@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Removes Remote Tasks/celery.contrib.http\"라고 기능 자체를 제거한다고 밝히고, 이 테스트가 검증하던 http.HttpDispatch 기능이 사라졌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지와 PR 제목이 \"remove ix\"로, 사용자가 쓰던 .ix 인덱서 기능 자체를 제거하는 작업이며 이 테스트는 그 .ix 폐기 경고를 검증하던 테스트다."}

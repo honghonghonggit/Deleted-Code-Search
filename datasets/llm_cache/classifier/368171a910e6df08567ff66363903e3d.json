@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 `--task`(`model_config.task`)가 deprecated되고 `--runner`/`--convert`로 대체된다고 명시했으며, `model_info` 프로퍼티가 제거되어 공개 설정 표면에서 사라졌다."}

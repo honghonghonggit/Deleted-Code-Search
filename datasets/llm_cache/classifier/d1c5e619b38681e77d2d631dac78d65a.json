@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #552에서 redirect와 auth를 미들웨어에서 제거하고 Client 인스턴스가 직접 처리하도록 구조를 변경하면서 해당 __init__이 제거됨"}

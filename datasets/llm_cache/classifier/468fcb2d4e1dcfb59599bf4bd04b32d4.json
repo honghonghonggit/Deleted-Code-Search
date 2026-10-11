@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지 'delete packages'와 PR 본문은 vendored 의존성 제거만 밝힐 뿐 이 shutdown 함수의 삭제 이유를 이름으로 가리키지 않고, 대체 코드나 호출자 변경도 화면에 없다."}

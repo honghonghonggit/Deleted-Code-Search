@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 feature flag 테스트를 단위 테스트로 전환했다고 밝혀, 이 통합 테스트 함수는 검증 대상이 단위 테스트로 옮겨져 호출되지 않게 됐다."}

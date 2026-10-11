@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 \"removes a few methods from EntityComponent that are not in use and should not be used\"라며 사용되지 않는 메서드 제거를 명시했고, reset은 async_reset으로 이름이 바뀐 내부 메서드에 해당한다."}

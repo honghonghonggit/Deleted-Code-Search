@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 `[tool.crewai]` 메타데이터 기반 명시적 정의로 전환하며 reset-memories가 선언된 JSON crew만 로드하도록 바꿨다고 밝히고, 같은 파일에 `_configured_json_crew_path()`가 추가되어 프로젝트 정의 판별 책임이 `configured_project_definition`으로 이동했다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문은 test_frame.py를 분할하고 flake8 오류를 고친다고만 말할 뿐, 이 테스트 함수를 이름으로 가리키며 삭제 이유를 밝히지 않고, 삭제된 본문이나 같은 자리에 들어온 대체 코드에서도 이유를 알 수 없다."}

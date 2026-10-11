@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 테스트는 `RapidOcrModel._default_models`의 하드코딩된 모델 경로 테이블을 검증하는데, 같은 커밋이 그 테이블을 resolver 기반으로 교체하면서 검증 대상이 사라졌다."}

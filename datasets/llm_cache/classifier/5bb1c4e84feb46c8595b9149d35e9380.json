@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 MELCloud 통합을 DataUpdateCoordinator 패턴으로 리팩터링하면서 MelCloudDevice 래퍼의 device_id 프로퍼티가 새 coordinator 기반 구조로 대체됐다."}

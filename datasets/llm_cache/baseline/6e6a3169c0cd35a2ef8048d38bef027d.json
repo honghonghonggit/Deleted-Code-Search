@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`pydantic_core` 기반의 클래스 기반 모델 생성으로 전환하면서 설정 검사 방식이 재구성되어 제거됨"}

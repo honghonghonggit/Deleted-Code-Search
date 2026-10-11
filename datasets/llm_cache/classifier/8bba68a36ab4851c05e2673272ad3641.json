@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목과 본문이 BitBlas 지원 자체를 폐기(deprecate)한다고 명시하고, 이 함수는 BitBlas matmul 설정을 담당하는 내부 구현이므로 기능 제거에 해당한다."}

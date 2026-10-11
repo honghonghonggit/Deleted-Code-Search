@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 파일은 `from ._case import *`로 대체되는 호환 shim이 되었고, 삭제된 `assertPendingDeprecation`을 호출하던 자리가 사라져 검증 대상이 없어졌다."}

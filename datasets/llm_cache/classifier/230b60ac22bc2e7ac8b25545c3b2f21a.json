@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|삭제된 `make_inputs_require_grad`의 역할이 추가된 `from unsloth_zoo.training_utils import prepare_model_for_training` 호출로 이어받아져 외부 라이브러리로 구현이 옮겨졌다."}

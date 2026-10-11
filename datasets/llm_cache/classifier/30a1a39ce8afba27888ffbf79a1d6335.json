@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 BaseMultiModalProcessor의 프롬프트 대체 적용 여부 반환 방식 변경과 DictEmbeddingItems 도입을 명시하고, 같은 파일에서 DictEmbeddingItems 기반 처리로 교체되어 get_count가 속했던 데이터 아이템 인터페이스가 재편됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 exec 기반 hook_manager.py를 제거하고 선언적 hook_registry.py로 대체한다고 밝혀, 훅 설명 조회 함수는 호출자를 잃고 제거됐다."}

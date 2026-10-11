@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지 \"MAINT Unvendor joblib\"과 PR 본문이 벤더링된 joblib을 외부 의존성으로 대체한다고 밝히고 있어, 이 함수는 외부 joblib/loky 라이브러리 구현으로 이전된다."}

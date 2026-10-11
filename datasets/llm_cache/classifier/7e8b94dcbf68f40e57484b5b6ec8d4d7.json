@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문이 joblib 언벤도링을 말하지만 이 함수의 삭제 이유를 이름으로 가리키지 않고, 경로가 vendor 영역이라 판단 근거가 부족하다."}

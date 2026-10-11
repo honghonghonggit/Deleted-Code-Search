@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #5293이 coordinator 추상화를 도입해 tp/pp의 분산 로직을 통합하면서 get_world()/get_tp()/get_pp()로 그룹 접근을 재구성했기 때문에 제거됨."}

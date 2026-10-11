@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 deprecation timeline에 따라 max_length 지원 부재를 위한 shim을 제거했다고 명시함"}

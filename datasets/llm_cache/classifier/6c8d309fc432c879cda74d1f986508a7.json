@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 auth API를 I/O 없는 구조로 바꾸고 'send_handling_auth' 메서드와 빈 Auth 클래스를 도입한다고 밝혀, 추상 __call__ 인터페이스가 새 구조에 맞지 않게 되어 제거됐다."}

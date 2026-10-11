@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문은 \"Revert #5991\"과 CI 실패만 말할 뿐 import_dashboards 함수나 파일을 이름으로 가리키지 않고, 삭제된 본문에도 이유를 드러내는 deprecated 경고·스텁·주석이 없으며 대체 코드도 없다."}

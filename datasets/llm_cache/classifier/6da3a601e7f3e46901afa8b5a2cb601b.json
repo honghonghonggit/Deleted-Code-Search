@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|테스트가 데이터 가용성을 직접 확인하는 대신 fetch_olivetti_faces_fxt 픽스처를 받도록 호출 경로가 바뀌어, 가용성 확인 책임이 픽스처로 옮겨졌다."}

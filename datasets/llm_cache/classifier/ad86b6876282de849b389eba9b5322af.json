@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 본문은 events 모듈을 crewai.utilities.events에서 crewai.events로 옮기고 구 경로에 deprecation 스텁을 남긴다고만 말할 뿐, 이 리스너 함수의 삭제 이유를 이름으로 가리키지 않으며, 이 파일에 추가되거나 대체된 코드도 화면에 없다."}

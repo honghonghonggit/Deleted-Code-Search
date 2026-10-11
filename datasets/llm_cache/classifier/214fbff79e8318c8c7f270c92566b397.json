@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Playwright를 제거하고 cdp-use 기반으로 BrowserSession 로직을 별도 모델로 분리하는 대규모 재작성(Refactor) 과정에서 element extraction/default actions 레이어가 교체됨."}

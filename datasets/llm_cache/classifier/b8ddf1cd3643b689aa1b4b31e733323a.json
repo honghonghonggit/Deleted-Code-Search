@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 `_WalkCoreSchema` 순회 로직 전체를 새 스키마 클리닝 로직으로 교체한다고 밝히고 있어, 이 메서드는 그 구조 변경으로 사라진 옛 순회기의 일부다."}

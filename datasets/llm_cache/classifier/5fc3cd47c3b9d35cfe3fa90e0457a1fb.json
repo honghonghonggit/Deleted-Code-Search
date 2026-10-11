@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "BUG|기존 fixture가 browser를 인자로 받지 않아 asyncio 오류가 발생하던 테스트 문제를 고치기 위해 browser 의존성을 추가했다."}

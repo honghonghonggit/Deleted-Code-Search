@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 \"Remove old panda subtree\"로 서브트리 전체 제거이며, 이 테스트가 검증하던 대상 코드가 함께 사라져 호출·검증 대상이 없어진 잔재 정리다."}

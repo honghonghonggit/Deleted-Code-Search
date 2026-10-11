@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|mypy 오류 해결을 위해 타입 어노테이션을 추가하는 과정에서 함수 시그니처와 속성 타입이 변경됨."}

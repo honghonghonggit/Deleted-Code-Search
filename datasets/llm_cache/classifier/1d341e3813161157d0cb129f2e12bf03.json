@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|리뷰 코멘트에서 언어 정의는 엔진별로 다르므로 AutoOCR은 언어 정의를 허용하지 않기로 결정했다고 밝혀, 구조·추상화 변경으로 테스트가 제거됨."}

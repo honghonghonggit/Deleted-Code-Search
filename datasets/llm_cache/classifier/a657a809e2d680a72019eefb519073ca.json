@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #4516에서 pydantic_core 기반으로 내부 로직을 `_internal` 모듈로 옮기고 스키마 생성 방식을 재구성했으며, 이 파일에는 대체 코드가 추가되지 않아 구조 변경으로 인해 이 코드가 맞지 않게 됐다."}

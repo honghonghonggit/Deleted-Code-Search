@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 cross_validation.StratifiedKFold 등 sklearn.cross_validation 모듈의 클래스들을 0.20에서 제거 대상으로 명시했고, 이 테스트는 제거된 cval.StratifiedKFold의 동작을 검증하던 공개 API 기능이라 함께 삭제됐다."}

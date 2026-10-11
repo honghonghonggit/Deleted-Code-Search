@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|PR 본문이 \"concurrency backends are not needed anymore as the core networking stuff is done with HTTPCore now\"라며 이 백엔드 디렉터리 전체가 더 이상 쓰이지 않아 제거됐다고 밝힌다."}

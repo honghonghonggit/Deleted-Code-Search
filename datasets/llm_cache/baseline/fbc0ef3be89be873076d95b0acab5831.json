@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 Keras 코드를 tf.keras 로 리다이렉트한다고 명시해 직접 구현이 외부 라이브러리로 대체됨"}

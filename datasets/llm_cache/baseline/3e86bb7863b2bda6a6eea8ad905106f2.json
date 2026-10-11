@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 QuerySet.totally_ordered 속성 추가를 명시하여, 기존 테스트가 새 추상화로 대체된 구조 변경으로 제거됨."}

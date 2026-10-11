@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "SEC|커밋 메시지가 0.9.0 보안 강화(SSRF·RCE·경로 traversal 수정, egress pinning)를 명시하고, 임의 헤더 설정 함수 제거가 그 보안 재설계의 일부로 보인다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"Improved SSL configuration API\"를 내세우고 커밋 메시지가 \"Introduce new `SSLContext` API\"라며 SSL 설정 인터페이스 자체를 재구성한 작업이므로, 이 내부 헬퍼는 새 API 구조에 맞지 않게 되어 제거된 것으로 판단된다."}

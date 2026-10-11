@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 settings.MIDDLEWARE_CLASSES를 사용하는 구식 미들웨어 지원 제거를 명시했고, 이 테스트는 그 제거된 미들웨어 방식을 검증하던 테스트다."}

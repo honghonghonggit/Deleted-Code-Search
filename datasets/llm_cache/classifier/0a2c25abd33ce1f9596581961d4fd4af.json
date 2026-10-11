@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 RoPE를 `rope_parameters` 기반으로 재구성하고 기본 주파수 계산을 모델 정의로 옮긴다고 밝히며, 같은 자리에 들어온 대체 `__init__`이 `config.rope_parameters[\"rope_type\"]`와 `compute_default_rope_parameters`로 같은 역할을 이어받는다."}

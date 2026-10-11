@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 `_WalkCoreSchema` 로직을 새 스키마 클리닝 로직으로 대체한다고 밝히고, 이 함수는 그 `_WalkCoreSchema` 의 walk 핸들러로서 새 트래버설 로직이 같은 일을 이어받는다."}

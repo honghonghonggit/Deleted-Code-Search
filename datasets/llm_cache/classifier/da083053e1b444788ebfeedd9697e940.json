@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지·PR 본문은 datetime granularity 기능을 말할 뿐 fieldsetizer 삭제 이유를 가리키지 않고, 추가된 코드에도 이 함수를 대체하거나 호출하던 자리가 바뀐 흔적이 없다."}

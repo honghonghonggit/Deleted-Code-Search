@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|JSONBAgg 단일 테스트가 여러 집계를 subTest()로 묶은 test_empty_result_set으로 대체되어 같은 검증이 다른 구조의 테스트로 이어지므로."}

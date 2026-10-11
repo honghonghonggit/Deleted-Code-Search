@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 concurrency backends are not needed anymore as the core networking stuff is done with HTTPCore now라며 백엔드 자체를 폐기했고, 대체 코드도 없다."}

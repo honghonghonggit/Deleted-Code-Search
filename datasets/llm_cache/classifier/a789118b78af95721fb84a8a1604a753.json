@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|이 파일의 테스트가 네트워크 다운로드 여부를 try/except로 직접 판별하는 대신 fetch_olivetti_faces_fxt 픽스처를 받도록 재구성되어, 가용성 확인 책임이 픽스처로 옮겨졌다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`_get_body`가 사라진 자리에 `SlackMixin`을 상속하고 `_get_body(content=self._content)`를 호출하는 새 `SlackNotification` 구조가 들어와, 본문 생성 책임이 mixin으로 옮겨졌다."}

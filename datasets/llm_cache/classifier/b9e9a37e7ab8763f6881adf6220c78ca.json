@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문 Migration 항목에서 `--browser remote`와 cloud task/session/profile 서브커맨드를 제거하고 `browser-use cloud`로 대체한다고 명시해, 로컬 프로필 목록 조회 기능이 공개 CLI 표면에서 사라졌다."}

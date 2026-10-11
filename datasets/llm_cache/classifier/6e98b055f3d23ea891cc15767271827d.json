@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 \"removing redundancy by gathering tests in classes and sharing setup functions\"라 밝히고, 삭제된 setup의 본문(idx/df/d 생성)이 파라미터를 받는 FrameConstructorDTIndexFromOffsets.setup으로 그대로 이어져 같은 일이 다른 클래스 자리에서 계속된다."}

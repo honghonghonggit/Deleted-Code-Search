@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지가 이 테스트 파일을 smoke 테스트로 이동했다고 밝히지만, 삭제된 `summarize` 함수 자체가 어디로 옮겨졌는지나 왜 지워졌는지에 대한 문장이 없고, 같은 커밋이 이 파일에 추가한 코드도 없다."}

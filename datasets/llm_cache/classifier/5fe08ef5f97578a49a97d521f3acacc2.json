@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|트리거 기반 시퀀스 생성 방식이 Oracle identity 컬럼 지원으로 대체되면서, 트리거 이름을 만들던 이 헬퍼 대신 `_get_sequence_name`/`_get_no_autofield_sequence_name`이 시퀀스 이름을 다루는 구조로 바뀌었다."}

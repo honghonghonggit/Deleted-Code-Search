@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "PERF|nmap_tracker가 HA를 느리게 만들어 사용할 수 없게 한다는 이슈 #52565 때문에 2021.6 버전으로 되돌렸다."}

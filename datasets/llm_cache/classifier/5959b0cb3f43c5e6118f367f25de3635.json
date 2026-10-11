@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|pre-commit, isort, black, autoflake 도입으로 코드 포맷팅이 변경되어 함수 로직은 그대로이고 들여쓰기와 줄바꿈만 재구성됨."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋이 Cython 제거와 pyproject.toml 전환으로 빌드·패키징 구조를 바꾸면서 setup.py의 기존 링크 치환 로직이 그 구조에 맞지 않게 되어 삭제됐다."}

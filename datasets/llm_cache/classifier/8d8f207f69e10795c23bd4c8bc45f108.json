@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored 의존성을 제거하는 작업이라고 밝혀, 벤더링된 six.py 구현을 외부·표준 라이브러리 사용으로 대체한 것이다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Removed shims for lack of max_length support in file storage per deprecation timeline\"이라며 file storage의 max_length 미지원 shim을 폐기 시한에 따라 제거했다고 밝히므로, 사용자 기능 자체를 없앤 FEAT다."}

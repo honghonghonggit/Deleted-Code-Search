@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PydanticSchemaParser를 제거하고 직접 스키마 생성으로 대체하는 구조 변경의 일부로 삭제됨"}

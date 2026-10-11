@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Clean deprecated losses\"로 폐기된 loss 옵션을 제거하는 작업이며, 이 테스트는 제거된 loss=\"binary_crossentropy\" 옵션의 오류 동작을 검증하던 테스트다."}

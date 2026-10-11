@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목과 본문이 OneHotEncoder의 legacy mode를 제거한다고 명시했고, 삭제된 fit의 _legacy_mode 분기와 _handle_deprecations 호출이 사라지면서 legacy 옵션 자체가 공개 표면에서 없어졌다."}

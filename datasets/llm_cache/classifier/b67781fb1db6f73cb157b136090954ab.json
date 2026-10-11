@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `_content_streams.py`를 `_content.py`로 재구성하고 multipart 처리를 `_multipart.py`로 분리했다고 밝혀, 구조 변경으로 이 메서드가 맞지 않게 됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 제목과 본문이 `DeepSpeedFp8` 양자화 스킴을 deprecation/제거한다고 명시해 사용자 기능 자체가 없어진다."}

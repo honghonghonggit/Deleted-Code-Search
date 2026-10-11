@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|`if TYPE_CHECKING` 블록으로 타입 정의를 재구성하면서 `__modify_schema__`가 같은 자리에 그대로 남아 있고, 리뷰 코멘트도 \"no extra logic has been changed\"라며 들여쓰기 변경일 뿐임을 밝히고 있다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문에서 URL.fullpath의 프로퍼티 setter를 제거한다고 명시했고, 프록시 URL 재작성 시절의 잔재로 더 이상 필요하지 않다고 밝혀 공개 API 표면에서 기능을 없앴다."}

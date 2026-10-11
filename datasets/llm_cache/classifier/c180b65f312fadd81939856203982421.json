@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 인스턴스별 임베더 설정을 지원하도록 rag 저장소를 재구성한다고 밝혔고, 추가된 코드에서 embedder 설정이 get_embedding_function/create_client로 클라이언트 생성 시점에 처리되도록 옮겨져 같은 역할이 다른 자리에서 계속된다."}

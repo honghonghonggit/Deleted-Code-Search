@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지가 이전 커밋을 revert한다는 사실만 말할 뿐, 이 __init__ 함수가 왜 삭제됐는지 이름으로 가리키는 이유 문장이 없고, 대체 코드나 호출자 변경도 화면에 없다."}

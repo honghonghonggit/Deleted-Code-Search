@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 BrowserSession 로직을 별도 모델로 분리하는 작업이라고 명시해 구조 변경으로 제거됐다."}

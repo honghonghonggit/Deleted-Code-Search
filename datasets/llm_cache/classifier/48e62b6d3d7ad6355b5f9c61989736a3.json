@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 15개 list 스키마 쌍을 공용 `PaginatedListRequest`/`PaginatedResponse` 기반으로 이관하는 DRY 리팩터라 밝히고, 이 파일에서도 `ListTasksRequest(PaginatedListRequest[TaskColumnFilter])`가 추가되어 필터 파싱 검증기가 공용 베이스로 옮겨졌다."}

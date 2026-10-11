@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|PR 본문이 vendored dependency 제거를 목표로 한다고 밝히고 있고, ordered_dict.py 파일 자체가 삭제되어 표준 라이브러리 collections.OrderedDict로 대체된 것으로 보인다."}

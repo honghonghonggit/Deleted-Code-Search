@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #4516이 pydantic_core로의 전환과 내부 로직을 `_internal` 모듈로 재구성하는 대규모 재작성이며, 이 파일의 검증 로직이 그 구조 변경으로 대체되어 맞지 않게 됐다."}

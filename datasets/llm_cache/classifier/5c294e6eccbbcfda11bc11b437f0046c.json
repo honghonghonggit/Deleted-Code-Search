@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|Model._meta API가 필드 조회 방식으로 재정식화되면서 get_field_by_name 기반 테스트가 제거됨"}

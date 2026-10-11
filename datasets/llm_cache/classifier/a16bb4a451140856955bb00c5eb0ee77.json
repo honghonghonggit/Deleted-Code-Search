@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 클라이언트에 내장된 netrc 인증을 제거하고 명시적 NetRCAuth() 클래스로 대체하는 동작 변경이라 밝히고 있어, 사용자 기능 자체가 없어진 경우다."}

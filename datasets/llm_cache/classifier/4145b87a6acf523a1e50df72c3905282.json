@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Remove the deprecated old tasks API\"라고 밝히고 PR 본문에서 4.0.0에 폐기된 old tasks API를 5.0.0에서 제거한다고 설명하므로, 공개 API 표면의 기능 자체를 없앤 것이다."}

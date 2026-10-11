@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 InvalidQuery 예외를 deprecation timeline에 따라 제거했다고 밝혀, 이 테스트가 검증하던 대상이 사라졌다."}

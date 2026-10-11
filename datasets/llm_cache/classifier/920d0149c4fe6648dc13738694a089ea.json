@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|같은 함수가 `read_xml_iterparse(data, temp_path, **kwargs)`로 시그니처만 바뀌어 같은 자리에 다시 추가되어, tmp_path에서 temp_file 픽스처 기반으로 인터페이스가 재편된 것이다."}

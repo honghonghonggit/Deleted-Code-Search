@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "LIB|커밋 메시지가 \"Replace all code with tf.keras redirects\"라 하고, 추가된 코드가 `from tensorflow.keras.metrics import *`로 이 파일의 구현을 외부 라이브러리(tf.keras) 호출로 대체했다."}

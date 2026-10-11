@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `_actual_model`이 다중 래핑을 처리하지 못해 `_model_unwrap`으로 대체한다고 명시하고, 추가된 코드에 재귀적으로 언래핑하는 `_model_unwrap`이 같은 일을 이어받고 있다."}

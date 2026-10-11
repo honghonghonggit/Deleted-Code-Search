@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|이 커밋은 #8157을 되돌리는 revert로, must_not_run은 probe가 실행되지 않아야 함을 검증하는 테스트 헬퍼인데 되돌림으로써 검증 대상(probe 로직)이 사라져 호출자를 잃었다."}

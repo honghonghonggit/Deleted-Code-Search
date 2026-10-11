@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지의 \"Clean up old test scripts, add clean anti-bot test\"가 이 테스트 스크립트를 정리 대상으로 지목하고, 삭제된 main()은 호출자를 잃은 일회성 스크립트 진입점이다."}

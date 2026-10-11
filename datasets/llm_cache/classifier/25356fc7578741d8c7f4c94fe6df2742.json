@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 제목·본문이 Transport API를 `request -> response` 방식으로 바꾼다고 밝히고, 같은 파일에 `handle_request(self, request: Request) -> Response`가 추가되어 기존 `__iter__` 기반 인터페이스가 새 인터페이스로 대체됐다."}

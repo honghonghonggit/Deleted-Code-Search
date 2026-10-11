@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Introduce new `SSLContext` API\"라며 SSL 설정 API를 새로 도입했고, 이 함수는 그 개선 전의 구식 TLS 최소 버전 설정 헬퍼로 새 API 구조에서 맞지 않게 됐다."}

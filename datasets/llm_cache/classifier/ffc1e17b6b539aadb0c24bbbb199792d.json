@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 \"Upgraded Layout Postprocessing, sending old code back to ERZ\"라며 레이아웃 후처리 구조를 계층적 클러스터 처리로 재편했고, 이 함수의 클러스터 신뢰도 기반 셀 제거 로직이 그 새 구조로 대체된 것으로 보인다."}

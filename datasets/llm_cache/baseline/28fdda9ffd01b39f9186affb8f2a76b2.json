@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 CE Loss 패칭을 언급하며, 이 함수는 LlamaForCausalLM 클래스를 Unsloth 버전으로 교체하는 패치 구조를 담당하므로 구조 변경으로 제거된 것으로 보인다."}

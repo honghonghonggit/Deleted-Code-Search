@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Deprecate TF + JAX\"와 \"Delete the tests\"로, TF/JAX 지원 자체를 폐기하면서 그 테스트를 제거한 것이라 사용자 기능 제거에 해당한다."}

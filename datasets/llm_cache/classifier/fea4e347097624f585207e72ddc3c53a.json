@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Studio\" 기능을 되돌리는(revert) 작업임을 밝히고 있고, 이 함수는 그 기능의 CLI 오버라이드 적용 로직으로 대체 코드 없이 제거됐다."}

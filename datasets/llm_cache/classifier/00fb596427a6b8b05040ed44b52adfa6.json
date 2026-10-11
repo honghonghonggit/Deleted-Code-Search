@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 예제를 노트북 스타일로 재작성하고 annoy를 제거하며 joblib 기반 비교 로직으로 바꾸는 등 예제 구조를 전면 개편했고, 삭제된 transform 래퍼는 이 재구성된 예제에서 더 이상 쓰이지 않게 됐다."}

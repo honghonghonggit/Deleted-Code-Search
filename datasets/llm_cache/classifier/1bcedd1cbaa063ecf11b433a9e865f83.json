@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|HGBT의 손실 모듈을 #20567의 공통 loss 모듈로 교체하면서 기존 손실 클래스의 inverse_link_function 정적 메서드가 새 구조로 대체됨"}

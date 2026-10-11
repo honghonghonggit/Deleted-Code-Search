@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|커밋 메시지가 exec 기반 hook_manager.py를 선언적 hook_registry.py로 교체한다고 밝혀 훅 설명 조회가 다른 구조로 이전됐다."}

@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR #1745에서 모든 PDF 백엔드가 get_segmented_page()를 구현해 SegmentedPdfPage를 생성하도록 구조가 바뀌면서, None만 반환하던 스텁이 실제 구현으로 대체됨."}

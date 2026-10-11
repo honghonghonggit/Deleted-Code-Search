@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR이 `ChangeList`의 결정적 정렬 로직을 `QuerySet.totally_ordered` 속성으로 추출하는 리팩터이고, 리뷰에서 새 위치로 테스트 커버리지가 1:1 이관됐다고 확인했으므로 구조 변경으로 인한 제거."}

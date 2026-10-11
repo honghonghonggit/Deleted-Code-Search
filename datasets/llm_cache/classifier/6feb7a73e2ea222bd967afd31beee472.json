@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋 메시지가 django.utils.datetime_safe 모듈을 폐기 일정에 따라 제거했다고 밝혀, 이 모듈을 검증하던 테스트의 setUp이 검증 대상 상실로 삭제됐다."}

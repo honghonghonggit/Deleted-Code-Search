@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"remove old model specific eval files\"라 하고 PR이 새 통합 eval 스크립트로 대체한다고 밝혀, gpt-4o 전용 eval 스크립트의 기능 자체가 새 스크립트로 옮겨가며 제거된 것이다."}

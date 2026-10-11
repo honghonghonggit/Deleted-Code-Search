@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 `DictEmbeddingItems` 기반으로 딕셔너리 임베딩 입력 형식을 바꾼다고 밝히고, 추가된 코드가 `_qwen2vl_field_config`와 `DictEmbeddingItems`로 데이터 항목 처리를 대체하므로 `get_count`가 맞지 않게 됐다."}

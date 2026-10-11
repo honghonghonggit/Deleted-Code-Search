@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DEAD|커밋이 \"Studio (#4237)\"를 통째로 되돌리는 revert이고, 이 테스트가 검증하던 log_gpu_memory 관련 코드가 같은 커밋에서 함께 제거되어 검증 대상이 사라졌다."}

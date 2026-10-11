@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR #544가 sync 지원을 전면 제거하고 async 전용으로 전환한다고 밝혔으며, 이 테스트의 sync WSGI echo_body 함수도 그 일부로 사라졌다."}

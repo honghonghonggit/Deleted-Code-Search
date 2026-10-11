@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문에서 \"concurrency backends are not needed anymore as the core networking stuff is done with HTTPCore now\"라며 구조 변경으로 백엔드 디렉터리 전체를 제거했다고 밝힘."}

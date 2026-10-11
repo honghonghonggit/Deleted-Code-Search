@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|커밋 메시지가 \"Removed DatabaseIntrospection.get_indexes() per deprecation timeline\"이라며 공개 API인 get_indexes()를 폐기 일정에 따라 제거했다고 밝힌다."}

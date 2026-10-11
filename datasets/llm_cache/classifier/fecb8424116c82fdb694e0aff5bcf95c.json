@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "UNK|커밋 메시지와 PR 제목은 xai를 스케줄 테스트에 추가한다는 것뿐이고, 삭제된 테스트 본문은 xfail 마커가 붙은 super() 호출뿐이라 삭제 이유를 화면에서 확인할 수 없다."}

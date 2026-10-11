@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|get 메서드에 block, encoding 파라미터를 추가하는 API 시그니처 변경으로 기존 구현이 대체됨"}

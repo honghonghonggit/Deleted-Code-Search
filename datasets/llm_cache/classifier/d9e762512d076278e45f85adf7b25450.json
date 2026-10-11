@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "FEAT|PR 본문이 Filters Set 기능 자체를 영구 제거한다고 명시했고, 이 테스트는 그 기능의 API 엔드포인트를 검증하던 것이라 대상 기능 소멸로 삭제됐다."}

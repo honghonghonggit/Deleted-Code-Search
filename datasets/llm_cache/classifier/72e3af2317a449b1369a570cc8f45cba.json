@@ -1,0 +1,1 @@
+{"model": "deepseek-ai/deepseek-v4.1-flash", "text": "DESIGN|PR 본문이 @human_feedback이 더 이상 메서드를 HITL 런타임으로 감싸지 않고 정의 기반으로 피드백을 실행하도록 구조를 바꿨다고 설명하며, 이 테스트의 데코레이터 래핑 방식이 그 새 구조에 맞지 않게 됐다."}
